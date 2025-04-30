@@ -1,89 +1,80 @@
-.hero-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.category {
-  height: 50px;
-  background-color: rgb(171, 253, 171);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.side-nav {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.side-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.side-nav ul li {
-  padding: 10px 0;
-}
-
-.side-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-.side-nav ul li a:hover {
-  color: #0d6efd;
-}
-
-.product-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 16px;
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #646464;
+  --tertiary-color: #e8feff;
+  --background-color: #f4f4f4;
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
 }
-
-.product-image {
-  height: 200px;
-  object-fit: cover;
-}
-
 .product-badge {
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: #ff6b6b;
-  color: white;
+  padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
-  padding: 5px 10px;
-  border-radius: 12px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0.25rem;
 }
 
-.btn-outline-primary {
-  border-width: 2px;
+.image-scroll {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 10px;
 }
-del{
-  font-size: 16px;
-}
-.buy-now{
-  color: #333;
-  font-size: 22px;
+
+.sticky-details {
+  position: sticky;
+  top: 80px; /* Adjust based on your navbar height */
 }
 
 .color1, .color2, .color3, .color4 {
-  height: 30px;
   width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin-right: 10px;
   cursor: pointer;
   border: 2px solid #ddd;
 }
-.color1 { background-color: #53f7d3; }
-.color2 { background-color: #f3ffb0; }
-.color3 { background-color: #ff8d8d; }
-.color4 { background-color: #f7ec53; }
+
+.color1 { background-color: #f44336; }
+.color2 { background-color: #4caf50; }
+.color3 { background-color: #2196f3; }
+.color4 { background-color: #ff9800; }
+
+.size {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.quantity-box {
+  border: 1px solid #ccc;
+  height: 35px;
+  width: 90px;
+  padding: 0 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #f8f9fa;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.clickable:hover {
+  color: #007bff;
+}
+.card img {
+  object-fit: cover;
+  height: 200px;
+}
+
