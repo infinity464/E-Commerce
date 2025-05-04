@@ -93,3 +93,12 @@
 .sell{
   margin-left: 10px;
 }
+.category-img{
+  height: 50px;
+  width: 50px;
+}
+.category-img p{
+  font-size: 18px;
+  font-weight: semi-bold;
+  color: var(--text-color);
+}
