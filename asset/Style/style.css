@@ -77,4 +77,19 @@
   object-fit: cover;
   height: 200px;
 }
-
+.top-collection{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.progress{
+  height: 3%;
+}
+.progress-bar{
+  background-color: #333;
+}
+.available{
+  font-size: 14px;
+}
+.sell{
+  margin-left: 10px;
+}
