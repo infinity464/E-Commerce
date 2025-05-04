@@ -45,13 +45,13 @@
     
           <!-- Right icons -->
           <div class="d-flex gap-3">
-            <a href="#" class="text-dark position-relative">
+            <a href="wishlistProduct.html" class="text-dark position-relative">
               <i class="bi bi-heart fs-5"></i>
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 2
               </span>
             </a>
-            <a href="#" class="text-dark position-relative">
+            <a href="cart.html" class="text-dark position-relative">
               <i class="bi bi-cart fs-5"></i>
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 3
@@ -83,7 +83,7 @@
     </aside>
 
     <div class="col-md-9">
-      <img src="https://placehold.co/600x400/png" alt="Hero Banner" class="img-fluid rounded shadow-sm">
+      <img src="asset/images/hero-images/banner.jpg" alt="Hero Banner" class="img-fluid rounded shadow-sm">
     </div>
   </div>
 </div>
@@ -92,7 +92,10 @@
 <section id="category" class="container my-5">
   <h2 class="fw-bold mb-4">Popular Categories</h2>
   <div class="row g-3 text-center">
-    <div class="col-md-2"><div class="bg-light border rounded py-4">1</div></div>
+    <div class="col-md-2 bg-light border rounded p-2 d-flex flex-column justify-content-center align-items-center">
+      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
+      <p>Clothing</p>
+    </div>
     <div class="col-md-2"><div class="bg-light border rounded py-4">2</div></div>
     <div class="col-md-2"><div class="bg-light border rounded py-4">3</div></div>
     <div class="col-md-2"><div class="bg-light border rounded py-4">4</div></div>
@@ -115,7 +118,7 @@
     <div class="col-md-3">
       <div class="card h-100 border-0 shadow-sm">
         <div class="position-relative">
-          <img src="asset/images/products/product1.jpg" class="card-img-top" alt="Product">
+          <img src="asset/images/products/jacket.jpg" class="card-img-top img-fluid" alt="Product">
           <span class="badge bg-danger position-absolute top-0 start-0 m-2">New</span>
         </div>
         <div class="card-body">
@@ -125,17 +128,29 @@
             <span class="fw-bold text-primary">$49.99</span>
             <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
           </div>
+          <div class="progress  mt-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+          </div>
+          <div class="row g-4">
+            <div class="col-6">
+              <p class="available">Available: <span class="fw-bold">75</span></p> 
+              
+            </div>
+            <div class="col-6">
+              <p class="available sell">Sell: <span class="fw-bold">25</span></p> 
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
+    
     <!-- Duplicate this card structure for the rest of the products -->
 
     <!-- EXAMPLE (duplicated version of product with badge) -->
     <div class="col-md-3">
       <div class="card h-100 border-0 shadow-sm">
         <div class="position-relative">
-          <img src="asset/images/products/product2.jpg" class="card-img-top" alt="Smart Watch">
+          <img src="asset/images/products/smart watch.jpg" class="card-img-top" alt="Smart Watch">
           <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
         </div>
         <div class="card-body">
@@ -144,6 +159,18 @@
           <div class="d-flex justify-content-between align-items-center">
             <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
             <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+          </div>
+          <div class="progress  mt-4">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+          </div>
+          <div class="row g-4">
+            <div class="col-6">
+              <p class="available">Available: <span class="fw-bold">75</span></p> 
+              
+            </div>
+            <div class="col-6">
+              <p class="available sell">Sell: <span class="fw-bold text-primary">25</span></p> 
+            </div>
           </div>
         </div>
       </div>
@@ -157,10 +184,10 @@
 <section class="container my-5">
   <div class="row g-4">
     <div class="col-md-6">
-      <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Promo Image">
+      <img src="asset/images/products/smart watch.jpg" class="img-fluid rounded shadow-sm" alt="Promo Image">
     </div>
     <div class="col-md-6 position-relative">
-      <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Promo Image">
+      <img src="asset/images/products/telephone.jpg" class="img-fluid rounded shadow-sm" alt="Promo Image">
       <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-3">View All</a>
     </div>
   </div>
@@ -175,27 +202,27 @@
   </div>
   <div class="row g-4">
     <div class="col-md-6">
-      <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Main Product">
+      <img src="asset/images/products/watch.jpg" class="img-fluid rounded shadow-sm" alt="Main Product">
     </div>
     <div class="col-md-6">
       <div class="row g-2">
         <div class="col-4">
-          <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Product">
+          <img src="asset/images/products/iphone.jpg" class="img-fluid rounded shadow-sm" alt="Product">
         </div>
         <div class="col-4">
-          <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Product">
+          <img src="asset/images/products/avocado.jpg" class="img-fluid rounded shadow-sm" alt="Product">
         </div>
         <div class="col-4">
-          <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Product">
+          <img src="asset/images/products/fashion.jpg" class="img-fluid rounded shadow-sm" alt="Product">
         </div>
         <div class="col-md-6">
-          <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Product">
+          <img src="asset/images/products/telephone.jpg" class="img-fluid rounded shadow-sm" alt="Product">
         </div>
         <div class="col-md-3">
-          <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Product">
+          <img src="asset/images/products/baby-shop.jpg" class="img-fluid rounded shadow-sm" alt="Product">
         </div>
         <div class="col-md-3">
-          <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Product">
+          <img src="asset/images/products/fragnance.jpg" class="img-fluid rounded shadow-sm" alt="Product">
         </div>
       </div>
     </div>
@@ -207,13 +234,161 @@
   <div class="container">
     <div class="row g-4 align-items-center">
       <div class="col-md-6">
-        <img src="https://placehold.co/600x400/png" class="img-fluid rounded shadow-sm" alt="Phone">
+        <img src="asset/images/products/iphone.jpg" class="img-fluid rounded shadow-sm" alt="Phone">
       </div>
       <div class="col-md-6">
         <h1 class="fw-bold mb-3">Nothing CMF Phone 2A</h1>
         <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, illo!</p>
         <button class="btn btn-warning">View Details</button>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="top-collection">
+  <div class="container top-collection">
+    <div class="mb-5">
+      <h2 class="fw-bold">Top Collection</h2>
+      <hr class="w-25">
+      <p class="text-muted">Discover our top picks just for you</p>
+    </div>
+    <div class="row g-4">
+      <!-- Product Card -->
+      <!-- Repeat structure for each product -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <img src="asset/images/products/watch.jpg" class="card-img-top" alt="Product">
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">New</span>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-semibold">Stylish Jacket</h5>
+            <p class="text-muted small">Elegant, comfortable, and perfect for all seasons.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary">$49.99</span>
+              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Duplicate this card structure for the rest of the products -->
+  
+      <!-- EXAMPLE (duplicated version of product with badge) -->
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <img src="asset/images/products/fashion.jpg"card-img-top" alt="Smart Watch">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-semibold">Smart Watch</h5>
+            <p class="text-muted small">Stay connected and track your fitness goals.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
+              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <img src="asset/images/products/phone.jpg" class="card-img-top" alt="Smart Watch">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-semibold">Smart Watch</h5>
+            <p class="text-muted small">Stay connected and track your fitness goals.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
+              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <img src="asset/images/products/spray.jpg" class="card-img-top" alt="Smart Watch">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-semibold">Smart Watch</h5>
+            <p class="text-muted small">Stay connected and track your fitness goals.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
+              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <img src="asset/images/products/watch.jpg" class="card-img-top" alt="Smart Watch">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-semibold">Smart Watch</h5>
+            <p class="text-muted small">Stay connected and track your fitness goals.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
+              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <img src="asset/images/products/smart watch.jpg" class="card-img-top" alt="Smart Watch">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-semibold">Smart Watch</h5>
+            <p class="text-muted small">Stay connected and track your fitness goals.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
+              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <img src="asset/images/products/fragnance.jpg" class="card-img-top" alt="Smart Watch">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-semibold">Smart Watch</h5>
+            <p class="text-muted small">Stay connected and track your fitness goals.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
+              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="position-relative">
+            <img src="asset/images/products/jacket.jpg" class="card-img-top" alt="Smart Watch">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
+          </div>
+          <div class="card-body">
+            <h5 class="fw-semibold">Smart Watch</h5>
+            <p class="text-muted small">Stay connected and track your fitness goals.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
+              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Repeat remaining product cards using the same layout -->
     </div>
   </div>
 </section>
