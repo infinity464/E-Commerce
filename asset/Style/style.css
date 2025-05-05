@@ -3,7 +3,7 @@
   --secondary-color: #2ecc71;
   --text-color: #646464;
   --tertiary-color: #e8feff;
-  --background-color: #f4f4f4;
+  --background-color: #b0ffded2;
 }
 
 .product-card:hover {
@@ -93,12 +93,29 @@
 .sell{
   margin-left: 10px;
 }
+.category{
+  background-color: #f7f7f7;
+  /* height: 100px;
+  width: 100px; */
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 10px;
+  padding: 10px;
+  transition-property: width;
+  transition-property: height;
+  transition-duration: 1s;
+}
+.category p{
+  font-size: 14px;
+  font-weight: semi-bold;
+  margin-top: 8px;
+  
+}
 .category-img{
   height: 50px;
   width: 50px;
 }
-.category-img p{
-  font-size: 18px;
-  font-weight: semi-bold;
-  color: var(--text-color);
+
+.cart-image{
+  height: 100px;
+  border-radius: 20px;
 }
