@@ -8,62 +8,153 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/Style/style.css">
     <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+   <div class="navigation">
+    <div class="utility-nav d-none d-md-block bg-light py-2">
       <div class="container">
-        <!-- Brand -->
-        <a class="navbar-brand fw-bold" href="#">E-Commerce</a>
-    
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <!-- Left nav -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Shop</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">All Categories</a></li>
-                <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Offers</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          </ul>
-    
-          <!-- Right icons -->
-          <div class="d-flex gap-3">
-            <a href="wishlistProduct.html" class="text-dark position-relative">
-              <i class="bi bi-heart fs-5"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                2
-              </span>
-            </a>
-            <a href="cart.html" class="text-dark position-relative">
-              <i class="bi bi-cart fs-5"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                3
-              </span>
-            </a>
-            <a href="profile.html" class="text-dark">
-              <i class="bi bi-person fs-5"></i>
-            </a>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="small mb-0"><i class="bi bi-envelope-at-fill"></i> logo@example.com | <i class="bi bi-telephone-fill"></i> +91-9876543210</p>
+          </div>
+          <div class="col-md-6 text-end">
+            <p class="small mb-0">Free shipping on orders over $99</p>
           </div>
         </div>
       </div>
+    </div>
+  
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+      <div class="container">
+        <button type="button" id="sidebarCollapse" class="btn btn-link d-block d-md-none">
+          <i class="bi bi-layout-sidebar-inset-reverse"></i>
+        </button>
+  
+        <a class="navbar-brand" href="#">
+          <h4 class="fw-bold mb-0">Logo</h4>
+        </a>
+  
+        <ul class="navbar-nav ms-auto d-block d-md-none">
+          <li class="nav-item">
+            <a class="btn btn-link" href="#"><i class="bi bi-layout-sidebar-inset-reverse"></i><span class="badge bg-danger">3</span></a>
+          </li>
+        </ul>
+  
+        <div class="collapse navbar-collapse">
+          <form class="d-flex mx-auto my-2 my-lg-0">
+            <input class="form-control" type="search" placeholder="Search for products...">
+            <button class="btn btn-success ms-2" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+  
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn btn-link" href="#"><i class="bi bi-bag-fill"></i><span class="badge bg-danger">3</span></a>
+            </li>
+            <li class="nav-item ms-md-3">
+              <a class="btn btn-primary" href="#"><i class="bi bi-person-fill"></i>Log In / Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+  
+    <!-- Sub Menu -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-top">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Category</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Delivery Info</a></li>
+                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                <li><a class="dropdown-item" href="#">Terms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brands</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Delivery Info</a></li>
+                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                <li><a class="dropdown-item" href="#">Terms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Others</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Mobile Search Bar -->
+    <div class="search-bar d-block d-md-none bg-light py-2">
+      <div class="container">
+        <form class="d-flex">
+          <input class="form-control" type="search" placeholder="Search for products...">
+          <button class="btn btn-success ms-2" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Sidebar -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-10">
+              <a class="btn btn-primary" href="signup.html"><i class="bi bi-person-circle"></i> Log In</a>
+            </div>
+            <div class="col-2 text-end">
+              <button type="button" id="sidebarCollapseX" class="btn btn-link">
+                <i class="bi bi-person"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="list-unstyled components">
+        <li><a href="home.html"><i class="bi bi-house"></i> Home</a></li>
+        <li><a href="product.html"><i class="bi bi-basket2"></i> Products</a></li>
+        <li><a href="wishlistProduct.html"><i class="bi bi-bag-heart"></i> Wishlist</a></li>
+        <li><a href="#"><i class="bi bi-cart-plus"></i> Cart</a></li>
+        <li>
+          <a href="#supportSubmenu" data-bs-toggle="collapse" class="dropdown-toggle"><i class="bi bi-patch-question"></i> Support</a>
+          <ul class="collapse list-unstyled" id="supportSubmenu">
+            <li><a href="Delivery.html">Delivery Info</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="Terms.html">Terms & Conditions</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="bi bi-telephone-fill"></i> Contact</a></li>
+      </ul>
+      <h6 class="text-uppercase mt-4">Categories</h6>
+      <ul class="list-unstyled">
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Category 3</a></li>
+        <li><a href="#">Category 4</a></li>
+        <li><a href="#">Category 5</a></li>
+        <li><a href="#">Category 6</a></li>
+      </ul>
+      <ul class="social-icons list-inline mt-4">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+          <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-5"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube fs-5"></i></a>
+      </ul>
+    </nav>
+    <div class="overlay"></div>
+   </div>
+  
+    <!-- Overlay -->
+    
 
    <!-- Hero Section with Side Navigation -->
    <div class="container my-5">
@@ -72,37 +163,45 @@
         <div class="p-3 border rounded bg-light">
           <h5 class="fw-bold mb-3">Categories</h5>
           <ul class="list-unstyled">
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/audio-book.png" height="20" alt="Electronics">
-              <a href="#" class="text-decoration-none">Electronics</a>
+              <a href="#" class="text-decoration-none product-category">Electronics</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/brand.png" height="20" alt="Clothing">
-              <a href="#" class="text-decoration-none">Clothing</a>
+              <a href="#" class="text-decoration-none product-category">Clothing</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/sofa.png" height="20" alt="Home & Kitchen">
-              <a href="#" class="text-decoration-none">Furniture</a>
+              <a href="#" class="text-decoration-none product-category">Furniture</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/stack-of-books.png" height="20" alt="Books">
-              <a href="#" class="text-decoration-none">Books</a>
+              <a href="#" class="text-decoration-none product-category">Books</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/football.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none">Fitness</a>
+              <a href="#" class="text-decoration-none product-category">Fitness</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/baby.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none">Baby Products</a>
+              <a href="#" class="text-decoration-none product-category">Baby Products</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/phone.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none">Phone</a>
+              <a href="#" class="text-decoration-none product-category">Phone</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/football.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none">Fitness</a>
+              <a href="#" class="text-decoration-none product-category">Fitness</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
+              <img src="asset/images/icons/football.png" height="20" alt="Fitness">
+              <a href="#" class="text-decoration-none product-category">Fitness</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
+              <img src="asset/images/icons/football.png" height="20" alt="Fitness">
+              <a href="#" class="text-decoration-none product-category">Fitness</a>
             </li>
           </ul>
         </div>
@@ -176,94 +275,98 @@
 
 <section id="category" class="container my-5">
   <h2 class="fw-bold mb-4 text-center">Popular Categories</h2>
-  <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 text-center">
-    
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/brand.png" class="img-fluid category-img mb-2" alt="Clothing">
-        <p>Clothing</p>
+
+  <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-between text-center">
+          <!-- 10 items -->
+          <div class="category wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <img src="asset/images/icons/brand.png" class="img-fluid category-img mb-2" alt="Clothing">
+            <p>Clothing</p>
+          </div>
+          
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/gadgets.png" class="img-fluid category-img mb-2" alt="Gadget">
+            <p>Gadget</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Sofa">
+            <p>Sofa</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/phone.png" class="img-fluid category-img mb-2" alt="Phone">
+            <p>Phone</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/laptop.png" class="img-fluid category-img mb-2" alt="Laptop">
+            <p>Laptop</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/room.png" class="img-fluid category-img mb-2" alt="Furniture">
+            <p>Furniture</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/audio-book.png" class="img-fluid category-img mb-2" alt="Audio">
+            <p>Audio</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/gardening.png" class="img-fluid category-img mb-2" alt="Garden">
+            <p>Garden</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/cosmetics.png" class="img-fluid category-img mb-2" alt="Beauty">
+            <p>Beauty</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/baby.png" class="img-fluid category-img mb-2" alt="Baby">
+            <p>Baby</p>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/gadgets.png" class="img-fluid category-img mb-2" alt="Gadget">
-        <p>Gadget</p>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-between text-center">
+          <div class="category">
+            <img src="asset/images/icons/football.png" class="img-fluid category-img mb-2" alt="Sports">
+            <p>Sports</p>
+          </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/stack-of-books.png" class="img-fluid category-img mb-2" alt="Book">
+            <p>Book</p>
+          </div>
+          <!-- Add more categories here if you have more -->
+          <div class="category mx-2">
+            <img src="asset/images/icons/example.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>Extra</p>
+          </div>
+          <!-- Empty placeholders to make total 10 items -->
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+        </div>
       </div>
+
     </div>
 
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Sofa">
-        <p>Sofa</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/phone.png" class="img-fluid category-img mb-2" alt="Phone">
-        <p>Phone</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/laptop.png" class="img-fluid category-img mb-2" alt="Laptop">
-        <p>Laptop</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/room.png" class="img-fluid category-img mb-2" alt="Furniture">
-        <p>Furniture</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/audio-book.png" class="img-fluid category-img mb-2" alt="Audio">
-        <p>Audio</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/gardening.png" class="img-fluid category-img mb-2" alt="Garden">
-        <p>Garden</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/cosmetics.png" class="img-fluid category-img mb-2" alt="Beauty">
-        <p>Beauty</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/baby.png" class="img-fluid category-img mb-2" alt="Baby">
-        <p>Baby</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/football.png" class="img-fluid category-img mb-2" alt="Sports">
-        <p>Sports</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/stack-of-books.png" class="img-fluid category-img mb-2" alt="Book">
-        <p>Book</p>
-      </div>
-    </div>
-
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+    </button>
   </div>
 </section>
+
+
 
 <!-- Featured Products -->
 <section id="feature-product" class="container my-5 wow bounceInUp">
@@ -449,18 +552,27 @@
 <!-- Featured Product Full Width -->
 <section class="bg-light py-5">
   <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6">
-        <img src="asset/images/products/iphone.jpg" class="img-fluid rounded shadow-sm" alt="Phone">
+    <div class="row g-5 align-items-center">
+      
+      <!-- Image -->
+      <div class="col-md-6 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+        <img src="asset/images/products/iphone.jpg" class="img-fluid rounded shadow-sm" alt="Nothing CMF Phone 2A">
       </div>
-      <div class="col-md-6">
-        <h1 class="fw-bold mb-3">Nothing CMF Phone 2A</h1>
-        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, illo!</p>
-        <button class="btn btn-warning">View Details</button>
+      
+      <!-- Text Content -->
+      <div class="col-md-6 wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+        <h1 class="fw-bold mb-4">Nothing CMF Phone 2A</h1>
+        <p class="text-muted mb-4 fs-5">
+          Experience a sleek, modern design and top-tier performance with the Nothing CMF Phone 2A. 
+          Built for those who crave innovation and style.
+        </p>
+        <button class="btn btn-warning btn-lg px-4">View Details</button>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <section id="top-collection">
   <div class="container top-collection">
@@ -611,21 +723,31 @@
 </section>
 <section class="bg-light py-5">
   <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-outline-success" type="button" id="button-addon2">Subscribe</button>
-        </div>
+    <div class="row g-5 align-items-center">
+
+      <!-- Text Content -->
+      <div class="col-md-6 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+        <h1 class="fw-bold mb-3">Subscribe to Our Newsletter</h1>
+        <p class="text-muted fs-5">
+          Stay updated with the latest products, offers, and updates delivered straight to your inbox.
+        </p>
+        <button class="btn btn-warning mt-3">View Details</button>
       </div>
-      <div class="col-md-6">
-        <h1 class="fw-bold mb-3">Subscribe our Newsletter</h1>
-        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, illo!</p>
-        <button class="btn btn-warning">View Details</button>
+
+      <!-- Subscription Form -->
+      <div class="col-md-6 wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control form-control-lg" placeholder="Enter your email" aria-label="Email">
+            <button class="btn btn-success btn-lg" type="submit">Subscribe</button>
+          </div>
+        </form>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <footer class="bg-success text-white pt-5 pb-4">
   <div class="container text-md-left">
