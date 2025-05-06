@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/Style/style.css">
     <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
   <body>
 
@@ -161,37 +163,45 @@
         <div class="p-3 border rounded bg-light">
           <h5 class="fw-bold mb-3">Categories</h5>
           <ul class="list-unstyled">
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/audio-book.png" height="20" alt="Electronics">
-              <a href="#" class="text-decoration-none">Electronics</a>
+              <a href="#" class="text-decoration-none product-category">Electronics</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/brand.png" height="20" alt="Clothing">
-              <a href="#" class="text-decoration-none">Clothing</a>
+              <a href="#" class="text-decoration-none product-category">Clothing</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/sofa.png" height="20" alt="Home & Kitchen">
-              <a href="#" class="text-decoration-none">Furniture</a>
+              <a href="#" class="text-decoration-none product-category">Furniture</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/stack-of-books.png" height="20" alt="Books">
-              <a href="#" class="text-decoration-none">Books</a>
+              <a href="#" class="text-decoration-none product-category">Books</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/football.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none">Fitness</a>
+              <a href="#" class="text-decoration-none product-category">Fitness</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/baby.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none">Baby Products</a>
+              <a href="#" class="text-decoration-none product-category">Baby Products</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/phone.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none">Phone</a>
+              <a href="#" class="text-decoration-none product-category">Phone</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1">
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
               <img src="asset/images/icons/football.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none">Fitness</a>
+              <a href="#" class="text-decoration-none product-category">Fitness</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
+              <img src="asset/images/icons/football.png" height="20" alt="Fitness">
+              <a href="#" class="text-decoration-none product-category">Fitness</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 py-1 category-list">
+              <img src="asset/images/icons/football.png" height="20" alt="Fitness">
+              <a href="#" class="text-decoration-none product-category">Fitness</a>
             </li>
           </ul>
         </div>
@@ -265,94 +275,98 @@
 
 <section id="category" class="container my-5">
   <h2 class="fw-bold mb-4 text-center">Popular Categories</h2>
-  <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-4 text-center">
-    
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/brand.png" class="img-fluid category-img mb-2" alt="Clothing">
-        <p>Clothing</p>
+
+  <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-between text-center">
+          <!-- 10 items -->
+          <div class="category wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <img src="asset/images/icons/brand.png" class="img-fluid category-img mb-2" alt="Clothing">
+            <p>Clothing</p>
+          </div>
+          
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/gadgets.png" class="img-fluid category-img mb-2" alt="Gadget">
+            <p>Gadget</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Sofa">
+            <p>Sofa</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/phone.png" class="img-fluid category-img mb-2" alt="Phone">
+            <p>Phone</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/laptop.png" class="img-fluid category-img mb-2" alt="Laptop">
+            <p>Laptop</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/room.png" class="img-fluid category-img mb-2" alt="Furniture">
+            <p>Furniture</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/audio-book.png" class="img-fluid category-img mb-2" alt="Audio">
+            <p>Audio</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/gardening.png" class="img-fluid category-img mb-2" alt="Garden">
+            <p>Garden</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/cosmetics.png" class="img-fluid category-img mb-2" alt="Beauty">
+            <p>Beauty</p>
+          </div>
+          <div class="category wow animate__animated animate__fadeInUp">
+            <img src="asset/images/icons/baby.png" class="img-fluid category-img mb-2" alt="Baby">
+            <p>Baby</p>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/gadgets.png" class="img-fluid category-img mb-2" alt="Gadget">
-        <p>Gadget</p>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-between text-center">
+          <div class="category">
+            <img src="asset/images/icons/football.png" class="img-fluid category-img mb-2" alt="Sports">
+            <p>Sports</p>
+          </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/stack-of-books.png" class="img-fluid category-img mb-2" alt="Book">
+            <p>Book</p>
+          </div>
+          <!-- Add more categories here if you have more -->
+          <div class="category mx-2">
+            <img src="asset/images/icons/example.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>Extra</p>
+          </div>
+          <!-- Empty placeholders to make total 10 items -->
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+          <div class="category mx-2"></div>
+        </div>
       </div>
+
     </div>
 
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Sofa">
-        <p>Sofa</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/phone.png" class="img-fluid category-img mb-2" alt="Phone">
-        <p>Phone</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/laptop.png" class="img-fluid category-img mb-2" alt="Laptop">
-        <p>Laptop</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/room.png" class="img-fluid category-img mb-2" alt="Furniture">
-        <p>Furniture</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/audio-book.png" class="img-fluid category-img mb-2" alt="Audio">
-        <p>Audio</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/gardening.png" class="img-fluid category-img mb-2" alt="Garden">
-        <p>Garden</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/cosmetics.png" class="img-fluid category-img mb-2" alt="Beauty">
-        <p>Beauty</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/baby.png" class="img-fluid category-img mb-2" alt="Baby">
-        <p>Baby</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/football.png" class="img-fluid category-img mb-2" alt="Sports">
-        <p>Sports</p>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="category">
-        <img src="asset/images/icons/stack-of-books.png" class="img-fluid category-img mb-2" alt="Book">
-        <p>Book</p>
-      </div>
-    </div>
-
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+    </button>
   </div>
 </section>
+
+
 
 <!-- Featured Products -->
 <section id="feature-product" class="container my-5 wow bounceInUp">
@@ -538,18 +552,27 @@
 <!-- Featured Product Full Width -->
 <section class="bg-light py-5">
   <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6">
-        <img src="asset/images/products/iphone.jpg" class="img-fluid rounded shadow-sm" alt="Phone">
+    <div class="row g-5 align-items-center">
+      
+      <!-- Image -->
+      <div class="col-md-6 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+        <img src="asset/images/products/iphone.jpg" class="img-fluid rounded shadow-sm" alt="Nothing CMF Phone 2A">
       </div>
-      <div class="col-md-6">
-        <h1 class="fw-bold mb-3">Nothing CMF Phone 2A</h1>
-        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, illo!</p>
-        <button class="btn btn-warning">View Details</button>
+      
+      <!-- Text Content -->
+      <div class="col-md-6 wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+        <h1 class="fw-bold mb-4">Nothing CMF Phone 2A</h1>
+        <p class="text-muted mb-4 fs-5">
+          Experience a sleek, modern design and top-tier performance with the Nothing CMF Phone 2A. 
+          Built for those who crave innovation and style.
+        </p>
+        <button class="btn btn-warning btn-lg px-4">View Details</button>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <section id="top-collection">
   <div class="container top-collection">
@@ -700,21 +723,31 @@
 </section>
 <section class="bg-light py-5">
   <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-outline-success" type="button" id="button-addon2">Subscribe</button>
-        </div>
+    <div class="row g-5 align-items-center">
+
+      <!-- Text Content -->
+      <div class="col-md-6 wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+        <h1 class="fw-bold mb-3">Subscribe to Our Newsletter</h1>
+        <p class="text-muted fs-5">
+          Stay updated with the latest products, offers, and updates delivered straight to your inbox.
+        </p>
+        <button class="btn btn-warning mt-3">View Details</button>
       </div>
-      <div class="col-md-6">
-        <h1 class="fw-bold mb-3">Subscribe our Newsletter</h1>
-        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, illo!</p>
-        <button class="btn btn-warning">View Details</button>
+
+      <!-- Subscription Form -->
+      <div class="col-md-6 wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control form-control-lg" placeholder="Enter your email" aria-label="Email">
+            <button class="btn btn-success btn-lg" type="submit">Subscribe</button>
+          </div>
+        </form>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <footer class="bg-success text-white pt-5 pb-4">
   <div class="container text-md-left">
