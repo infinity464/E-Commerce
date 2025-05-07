@@ -198,6 +198,8 @@ body{
   display: block;
 }
 
+
+
 .category{
   background-color: #f7f7f7;
   border: 1px solid rgb(214, 214, 214);
@@ -348,4 +350,13 @@ section p, section ul li {
   border: 1px solid rgb(221, 221, 221);
   
   border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  aside {
+    display: none;
+  }
+  .banner-text{
+    display: none;
+  }
 }
