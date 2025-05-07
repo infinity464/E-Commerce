@@ -301,3 +301,8 @@ section p, section ul li {
   font-size: 1rem;
   color: #555;
 }
+.discount{
+  border: 1px solid rgb(221, 221, 221);
+  
+  border-radius: 10px;
+}
