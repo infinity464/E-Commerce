@@ -32,7 +32,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
       <div class="container">
         <button type="button" id="sidebarCollapse" class="btn btn-link d-block d-md-none">
-          <i class="bi bi-layout-sidebar-inset-reverse"></i>
+        
         </button>
   
         <a class="navbar-brand" href="#">
@@ -41,7 +41,7 @@
   
         <ul class="navbar-nav ms-auto d-block d-md-none">
           <li class="nav-item">
-            <a class="btn btn-link" href="#"><i class="bi bi-layout-sidebar-inset-reverse"></i><span class="badge bg-danger">3</span></a>
+            <a class="btn btn-link" href="cart.html"><i class="bi bi-bag-dash"></i><span class="badge bg-danger">3</span></a>
           </li>
         </ul>
   
@@ -53,10 +53,10 @@
   
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="btn btn-link" href="#"><i class="bi bi-bag-fill"></i><span class="badge bg-danger">3</span></a>
+              <a class="btn btn-link" href="cart.html"><i class="bi bi-bag-fill"></i><span class="badge bg-danger">3</span></a>
             </li>
             <li class="nav-item ms-md-3">
-              <a class="btn btn-primary" href="#"><i class="bi bi-person-fill"></i>Log In / Register</a>
+              <a class="btn btn-primary" href="signup.html"><i class="bi bi-person-fill"></i>Log In / Register</a>
             </li>
           </ul>
         </div>
@@ -70,14 +70,73 @@
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Category</a>
+            <li class="nav-item dropdown hover-dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Category</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Delivery Info</a></li>
-                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                <li><a class="dropdown-item" href="#">Terms</a></li>
+                <!-- Electronics with subcategories -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                  </ul>
+                </li>
+            
+                <!-- Fashion as single-level -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Fashion</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mens Clothing</a></li>
+                    <li><a class="dropdown-item" href="#">Womens Clothing</a></li>
+                    <li><a class="dropdown-item" href="#">Baby's Clothing</a></li>
+                  </ul>
+                </li>
+                
+                <!-- Home & Kitchen as single-level -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Home Kitchen</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
+            
             <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brands</a>
@@ -153,125 +212,75 @@
     <div class="overlay"></div>
    </div>
   
-    <!-- Overlay -->
-    
-
-   <!-- Hero Section with Side Navigation -->
-   <div class="container my-5">
-    <div class="row g-4 align-items-start">
-      <aside class="col-md-3">
-        <div class="p-3 border rounded bg-light">
-          <h5 class="fw-bold mb-3">Categories</h5>
+ 
+   <div class="my-5 container">
+    <div class="row g-4">
+      <!-- Sidebar Categories -->
+      <aside class="col-lg-3">
+        <div class="p-4 rounded-3 shadow-sm bg-white">
+          <h5 class="fw-bold mb-4 text-primary">Shop by Category</h5>
           <ul class="list-unstyled">
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/audio-book.png" height="20" alt="Electronics">
-              <a href="#" class="text-decoration-none product-category">Electronics</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/audio-book.png" height="22" alt="Electronics">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Electronics</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/brand.png" height="20" alt="Clothing">
-              <a href="#" class="text-decoration-none product-category">Clothing</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/brand.png" height="22" alt="Clothing">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Clothing</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/sofa.png" height="20" alt="Home & Kitchen">
-              <a href="#" class="text-decoration-none product-category">Furniture</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/sofa.png" height="22" alt="Furniture">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Furniture</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/stack-of-books.png" height="20" alt="Books">
-              <a href="#" class="text-decoration-none product-category">Books</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/stack-of-books.png" height="22" alt="Books">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Books</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/football.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none product-category">Fitness</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/football.png" height="22" alt="Fitness">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Fitness</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/baby.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none product-category">Baby Products</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/baby.png" height="22" alt="Baby Products">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Baby Products</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/phone.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none product-category">Phone</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/phone.png" height="22" alt="Phone">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Phone</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/football.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none product-category">Fitness</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/sofa.png" height="22" alt="Furniture">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Furniture</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/football.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none product-category">Fitness</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/audio-book.png" height="22" alt="Electronics">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Electronics</a>
             </li>
-            <li class="d-flex align-items-center gap-2 py-1 category-list">
-              <img src="asset/images/icons/football.png" height="20" alt="Fitness">
-              <a href="#" class="text-decoration-none product-category">Fitness</a>
+            <li class="d-flex align-items-center gap-2 mb-3 category-list">
+              <img src="asset/images/icons/baby.png" height="22" alt="Baby Products">
+              <a href="#" class="text-dark text-decoration-none fw-semibold">Baby Products</a>
             </li>
           </ul>
         </div>
       </aside>
   
-      <div class="col-md-9">
-        <img src="asset/images/hero-images/banner.jpg" alt="Hero Banner" class="img-fluid rounded shadow-sm">
+      <!-- Hero Banner -->
+      <div class="col-lg-9 position-relative">
+        <div class="hero-banner position-relative overflow-hidden rounded-3 shadow-lg">
+          <img src="asset/images/hero-images/banner.jpg" class="img-fluid w-100" alt="Hero Banner">
+          <div class="banner-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center p-5 text-white" style="background: rgba(0,0,0,0.4);">
+            <h2 class="display-5 fw-bold mb-3 banner-text">Upgrade Your Lifestyle</h2>
+            <p class="lead mb-4 banner-text">Discover amazing deals across electronics, fashion, fitness, and more.</p>
+            
+          </div>
+          
+        </div>
       </div>
     </div>
   </div>
   
+  
 
-<!-- Categories Section -->
-<!-- <section id="category" class="container my-5">
-  <h2 class="fw-bold mb-4">Popular Categories</h2>
-  <div class="row g-3 text-center">
-    <div class="col-md-1">
-      <div class="category">
-        <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-        <p>Clothing</p>
-      </div>
-    </div>
-    <div class="col-md-1">
-      <div class="category">
-      <img src="asset/images/icons/gadgets.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Gadget</p>
-    </div>
-  </div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/sofa.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Sofa</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Phone</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Laptop</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Furniture</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Audioable</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Garden</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Beauty</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Baby</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Sports</p>
-    </div></div>
-    <div class="col-md-1"><div class="category">
-      <img src="asset/images/icons/brand.png" class="card-img-top img-fluid category-img" alt="Product">
-      <p>Book</p>
-    </div></div>
-  </div>
-</section> -->
 
 <section id="category" class="container my-5">
   <h2 class="fw-bold mb-4 text-center">Popular Categories</h2>
@@ -283,44 +292,44 @@
       <div class="carousel-item active">
         <div class="d-flex justify-content-between text-center">
           <!-- 10 items -->
-          <div class="category wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+          <div class="category wow animate__animated  mx-2" data-wow-delay="0.1s">
             <img src="asset/images/icons/brand.png" class="img-fluid category-img mb-2" alt="Clothing">
             <p>Clothing</p>
           </div>
           
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/gadgets.png" class="img-fluid category-img mb-2" alt="Gadget">
             <p>Gadget</p>
           </div>
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Sofa">
             <p>Sofa</p>
           </div>
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/phone.png" class="img-fluid category-img mb-2" alt="Phone">
             <p>Phone</p>
           </div>
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/laptop.png" class="img-fluid category-img mb-2" alt="Laptop">
             <p>Laptop</p>
           </div>
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/room.png" class="img-fluid category-img mb-2" alt="Furniture">
             <p>Furniture</p>
           </div>
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/audio-book.png" class="img-fluid category-img mb-2" alt="Audio">
             <p>Audio</p>
           </div>
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/gardening.png" class="img-fluid category-img mb-2" alt="Garden">
             <p>Garden</p>
           </div>
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/cosmetics.png" class="img-fluid category-img mb-2" alt="Beauty">
             <p>Beauty</p>
           </div>
-          <div class="category wow animate__animated animate__fadeInUp">
+          <div class="category wow animate__animated animate__fadeInUp mx-2">
             <img src="asset/images/icons/baby.png" class="img-fluid category-img mb-2" alt="Baby">
             <p>Baby</p>
           </div>
@@ -340,17 +349,39 @@
           </div>
           <!-- Add more categories here if you have more -->
           <div class="category mx-2">
-            <img src="asset/images/icons/example.png" class="img-fluid category-img mb-2" alt="Extra">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>sofa</p>
+          </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/gardening.png" class="img-fluid category-img mb-2" alt="Extra">
             <p>Extra</p>
           </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>sofa</p>
+          </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>sofa</p>
+          </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>sofa</p>
+          </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>sofa</p>
+          </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>sofa</p>
+          </div>
+          <div class="category mx-2">
+            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
+            <p>sofa</p>
+          </div>
           <!-- Empty placeholders to make total 10 items -->
-          <div class="category mx-2"></div>
-          <div class="category mx-2"></div>
-          <div class="category mx-2"></div>
-          <div class="category mx-2"></div>
-          <div class="category mx-2"></div>
-          <div class="category mx-2"></div>
-          <div class="category mx-2"></div>
+          
         </div>
       </div>
 
@@ -499,19 +530,48 @@
     <!-- Repeat remaining product cards using the same layout -->
   </div>
 </section>
+<section>
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-6">
+
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Promo Banners -->
 <section class="container my-5">
   <div class="row g-4">
+    <!-- Smart Watch Promo -->
     <div class="col-md-6">
-      <img src="asset/images/products/smart watch.jpg" class="img-fluid rounded shadow-sm" alt="Promo Image">
+      <div class="promo-card position-relative text-white rounded overflow-hidden shadow-lg">
+        <img src="asset/images/products/smart watch.jpg" class="w-100 h-100 object-fit-cover" alt="Smart Watch">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4">
+          <h2 class="mb-2 fw-bold">Smart Watches</h2>
+          <p class="mb-3">Discover the latest in wearable tech.</p>
+          <a href="#" class="btn btn-outline-light">Shop Now</a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6 position-relative">
-      <img src="asset/images/products/telephone.jpg" class="img-fluid rounded shadow-sm" alt="Promo Image">
-      <a href="#" class="btn btn-primary position-absolute bottom-0 end-0 m-3">View All</a>
+
+    <!-- Telephone Promo -->
+    <div class="col-md-6">
+      <div class="promo-card position-relative text-white rounded overflow-hidden shadow-lg">
+        <img src="asset/images/products/telephone.jpg" class="w-100 h-100 object-fit-cover" alt="Telephone">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4">
+          <h2 class="mb-2 fw-bold">Classic Telephones</h2>
+          <p class="mb-3">Timeless design meets functionality.</p>
+          <a href="#" class="btn btn-outline-light">View All</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- Top Selling Products -->
 <section class="container my-5">
@@ -763,14 +823,15 @@
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
         <h6 class="text-uppercase fw-semibold mb-4">Quick Links</h6>
         <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
-          <li><a href="#" class="text-white text-decoration-none">About</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="Terms.html" class="text-white text-decoration-none">Terms and Condition</a></li>
+          <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="privacy-policy.html" class="text-white text-decoration-none">Refund and Return Policy</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
         </ul>
       </div>
 
-      <!-- Categories -->
+     
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
         <h6 class="text-uppercase fw-semibold mb-4">Categories</h6>
         <ul class="list-unstyled">
@@ -781,7 +842,6 @@
         </ul>
       </div>
 
-      <!-- Contact & Social -->
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
         <h6 class="text-uppercase fw-semibold mb-4">Contact</h6>
         <p><i class="bi bi-house-door-fill me-2"></i> Dhaka, Bangladesh</p>
