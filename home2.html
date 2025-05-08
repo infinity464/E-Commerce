@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="asset/Style/style.css">
+  <title>Home</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="navigation">
+
+    <!-- Utility Navbar -->
+    <div class="utility-nav d-none d-md-block bg-light py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="small mb-0">
+              <i class="bi bi-envelope-at-fill"></i> logo@example.com |
+              <i class="bi bi-telephone-fill"></i> +91-9876543210
+            </p>
+          </div>
+          <div class="col-md-6 text-end">
+            <p class="small mb-0">Free shipping on orders over $99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <form class="d-flex mx-auto my-2 my-lg-0">
+            <input class="form-control" type="search" placeholder="Search for products...">
+            <button class="btn btn-success ms-2" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn btn-link" href="cart.html">
+                <i class="bi bi-bag-fill"></i>
+                <span class="badge bg-danger">3</span>
+              </a>
+            </li>
+            <li class="nav-item ms-md-3">
+              <a class="btn btn-primary" href="signup.html">
+                <i class="bi bi-person-fill"></i> Log In / Register
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sub Menu -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-top">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+            <li class="nav-item dropdown hover-dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Category</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Fashion</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mens Clothing</a></li>
+                    <li><a class="dropdown-item" href="#">Womens Clothing</a></li>
+                    <li><a class="dropdown-item" href="#">Baby's Clothing</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Home & Kitchen</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Furniture</a></li>
+                    <li><a class="dropdown-item" href="#">Cookware</a></li>
+                    <li><a class="dropdown-item" href="#">Appliances</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brands</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Delivery Info</a></li>
+                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                <li><a class="dropdown-item" href="#">Terms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Others</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Search -->
+    <div class="search-bar d-block d-md-none bg-light py-2">
+      <div class="container">
+        <form class="d-flex">
+          <input class="form-control" type="search" placeholder="Search for products...">
+          <button class="btn btn-success ms-2" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sidebar (optional JS needed for toggle) -->
+    <nav id="sidebar" class="d-none">
+      <div class="sidebar-header p-3">
+        <a class="btn btn-primary" href="signup.html"><i class="bi bi-person-circle"></i> Log In</a>
+        <button type="button" id="sidebarCollapseX" class="btn btn-link float-end">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <ul class="list-unstyled components px-3">
+        <li><a href="home.html"><i class="bi bi-house"></i> Home</a></li>
+        <li><a href="product.html"><i class="bi bi-basket2"></i> Products</a></li>
+        <li><a href="wishlistProduct.html"><i class="bi bi-bag-heart"></i> Wishlist</a></li>
+        <li><a href="#"><i class="bi bi-cart-plus"></i> Cart</a></li>
+        <li>
+          <a href="#supportSubmenu" data-bs-toggle="collapse" class="dropdown-toggle"><i class="bi bi-patch-question"></i> Support</a>
+          <ul class="collapse list-unstyled" id="supportSubmenu">
+            <li><a href="Delivery.html">Delivery Info</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="Terms.html">Terms & Conditions</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="bi bi-telephone-fill"></i> Contact</a></li>
+      </ul>
+      <h6 class="text-uppercase px-3">Categories</h6>
+      <ul class="list-unstyled px-3">
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Category 3</a></li>
+        <li><a href="#">Category 4</a></li>
+        <li><a href="#">Category 5</a></li>
+      </ul>
+      <ul class="list-inline text-center mt-4">
+        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-facebook fs-5"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-instagram fs-5"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-twitter-x fs-5"></i></a></li>
+        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-youtube fs-5"></i></a></li>
+      </ul>
+    </nav>
+    <div class="overlay d-none"></div>
+  </div>
+
+  <section>
+    <div>
+        <img src="" alt="">
+    </div>
+  </section>
+  
+
+  <!-- Shop By Categories -->
+  <section class="container my-5">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <div>
+        <h5 class="fw-bold">Shop By Category</h5>
+        <a href="#" class="text-decoration-none small text-dark">View All →</a>
+      </div>
+      <div>
+        <button class="btn btn-outline-secondary rounded-circle me-2">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="btn btn-outline-secondary rounded-circle">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  
+    <div class="d-flex overflow-auto gap-3 pb-2">
+      <!-- Category Item -->
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/baby.png" class="img-fluid" width="60" alt="Fresh Fruits">
+        </div>
+        <h6 class="mb-1">Fresh Fruits</h6>
+        <small class="text-muted">16 ITEMS</small>
+      </div>
+  
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/cosmetics.png" class="img-fluid" width="60" alt="Green Veggies">
+        </div>
+        <h6 class="mb-1">Green Veggies</h6>
+        <small class="text-muted">29 ITEMS</small>
+      </div>
+  
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/laptop.png" class="img-fluid" width="60" alt="Canned Goods">
+        </div>
+        <h6 class="mb-1">Canned Goods</h6>
+        <small class="text-muted">105 ITEMS</small>
+      </div>
+  
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/stack-of-books.png" class="img-fluid" width="60" alt="Fresh Milk">
+        </div>
+        <h6 class="mb-1">Fresh Milk</h6>
+        <small class="text-muted">23 ITEMS</small>
+      </div>
+  
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/brand.png" class="img-fluid" width="60" alt="Snack Foods">
+        </div>
+        <h6 class="mb-1">Snack Foods</h6>
+        <small class="text-muted">20 ITEMS</small>
+      </div>
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/sofa.png" class="img-fluid" width="60" alt="Snack Foods">
+        </div>
+        <h6 class="mb-1">Snack Foods</h6>
+        <small class="text-muted">20 ITEMS</small>
+      </div>
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/room.png" class="img-fluid" width="60" alt="Snack Foods">
+        </div>
+        <h6 class="mb-1">Snack Foods</h6>
+        <small class="text-muted">20 ITEMS</small>
+      </div>
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/cosmetics.png" class="img-fluid" width="60" alt="Snack Foods">
+        </div>
+        <h6 class="mb-1">Snack Foods</h6>
+        <small class="text-muted">20 ITEMS</small>
+      </div>
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/gardening.png" class="img-fluid" width="60" alt="Snack Foods">
+        </div>
+        <h6 class="mb-1">Snack Foods</h6>
+        <small class="text-muted">20 ITEMS</small>
+      </div>
+      <div class="category-card text-center p-3 rounded" style="min-width: 160px;">
+        <div class="icon-circle mx-auto mb-2">
+          <img src="asset/images/icons/audio-book.png" class="img-fluid" width="60" alt="Snack Foods">
+        </div>
+        <h6 class="mb-1">Snack Foods</h6>
+        <small class="text-muted">20 ITEMS</small>
+      </div>
+    </div>
+  </section>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

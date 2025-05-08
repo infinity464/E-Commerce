@@ -61,6 +61,20 @@
   font-size: 14px;
 }
 
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for text visibility */
+  z-index: 1;
+}
+
+.hero-section .container {
+  z-index: 2;
+  position: relative;
+}
+
+
 
 .lato-black-italic {
   font-family: "Lato", sans-serif;
@@ -103,7 +117,9 @@ body{
   margin: 20px 0px;
 
 }
-
+.category-card:hover{
+  border: 1px solid rgb(114, 255, 114);
+}
 
 .image-scroll {
   max-height: 80vh;
@@ -198,6 +214,16 @@ body{
   display: block;
 }
 
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f9fafb, #fefefe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
 
 
 .category{
