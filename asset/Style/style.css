@@ -96,6 +96,20 @@ body{
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
+#search-bar::placeholder {
+  color: #aaa;
+}
+.nav-link{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.nav-link:hover {
+  color: #ffc107; /* Matches Bootstrap warning color */
+  text-decoration: underline;
+}
+
 .product-badge {
   position: absolute;
   top: 10px;
@@ -176,6 +190,10 @@ body{
 .card img {
   object-fit: cover;
   height: 200px;
+  transform: height 1s;
+}
+.cart img:hover{
+  height: 205px;
 }
 .top-collection{
   margin-top: 60px;
@@ -385,4 +403,7 @@ section p, section ul li {
   .banner-text{
     display: none;
   }
+}
+.faq{
+  background: linear-gradient(90deg, #f3bde9, #ffc3dc, #ffccd1, #ffd7cd, #ffe3d0, #fbeed8, #f8f7e5, #fafff4);
 }
