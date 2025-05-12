@@ -282,6 +282,74 @@ li{
 #profile-details .card {
   border-radius: 1rem;
 }
+.product-card {
+  width: 250px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: rgba(241, 241, 241, 0.15);
+}
+
+.product-card:hover {
+  border: 1px solid rgba(255, 189, 189, 0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-image-wrapper {
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.product-img {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.hover-icons {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .hover-icons {
+  opacity: 1;
+}
+
+.icon-btn {
+  background-color: white;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+  color: #198754; /* Bootstrap success */
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.card-img{
+  border-radius: 10px;
+}
+#bi-plus{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.list-group a{
+  padding: 15px;
+  font-size: 16px;
+}
 .list-group-item i {
   font-size: 1.1rem;
 }
