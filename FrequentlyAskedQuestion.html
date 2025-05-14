@@ -1,316 +1,455 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="asset/Style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="asset/Style/style.css" />
     <title>FAQ</title>
-</head>
-<body>
-     <div class="navigation">
-    <div class="utility-nav d-none d-md-block bg-light py-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="small mb-0"><i class="bi bi-envelope-at-fill"></i> logo@example.com | <i class="bi bi-telephone-fill"></i> +91-9876543210</p>
-          </div>
-          <div class="col-md-6 text-end">
-            <p class="small mb-0">Free shipping on orders over $99</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Main Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-      <div class="container">
-        <button type="button" id="sidebarCollapse" class="btn btn-link d-block d-md-none">
-        
-        </button>
-  
-        <a class="navbar-brand" href="#">
-          <h4 class="fw-bold mb-0">Logo</h4>
-        </a>
-  
-        <ul class="navbar-nav ms-auto d-block d-md-none">
-          <li class="nav-item">
-            <a class="btn btn-link" href="cart.html"><i class="bi bi-bag-dash"></i><span class="badge bg-danger">3</span></a>
-          </li>
-        </ul>
-  
-        <div class="collapse navbar-collapse">
-          <form class="d-flex mx-auto my-2 my-lg-0">
-            <input class="form-control" type="search" placeholder="Search for products...">
-            <button class="btn btn-success ms-2" type="submit"><i class="bi bi-search"></i></button>
+  </head>
+  <body>
+    <section id="navigation">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-4" href="#">Logo</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <form
+            class="d-none d-lg-flex mx-auto w-50 shadow-sm rounded-pill bg-white px-3 py-2"
+          >
+            <input
+              type="text"
+              class="form-control border-0 shadow-none bg-transparent px-3"
+              placeholder="What can I help you with today?"
+              style="flex: 1; border-radius: 50px"
+            />
+            <button
+              class="btn btn-dark rounded-pill px-3 d-flex align-items-center"
+              type="submit"
+            >
+              <i class="bi bi-search fs-5"></i>
+            </button>
           </form>
-  
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="btn btn-link" href="cart.html"><i class="bi bi-bag-fill"></i><span class="badge bg-danger">3</span></a>
-            </li>
-            <li class="nav-item ms-md-3">
-              <a class="btn btn-primary" href="signup.html"><i class="bi bi-person-fill"></i>Log In / Register</a>
-            </li>
-          </ul>
+
+          <!-- Icons -->
+          <div class="d-flex align-items-center gap-3 text-white">
+            <a href="cart.html" class="text-white fs-5"
+              ><i class="bi bi-bag"></i
+            ></a>
+            <a href="wishlistProduct.html" class="text-white fs-5"
+              ><i class="bi bi-heart"></i
+            ></a>
+            <a href="AccountSetting.html" class="text-white fs-5"
+              ><i class="bi bi-person"></i
+            ></a>
+          </div>
         </div>
-      </div>
-    </nav>
-  
-    <!-- Sub Menu -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light border-top">
-      <div class="container">
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
-            <li class="nav-item dropdown hover-dropdown">
-              <a class="nav-link dropdown-toggle" href="#">Category</a>
-              <ul class="dropdown-menu">
-                <!-- Electronics with subcategories -->
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
-                    <li><a class="dropdown-item" href="#">Laptops</a></li>
-                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
-                  </ul>
-                </li>
-            
-                <!-- Fashion as single-level -->
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">Fashion</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mens Clothing</a></li>
-                    <li><a class="dropdown-item" href="#">Womens Clothing</a></li>
-                    <li><a class="dropdown-item" href="#">Baby's Clothing</a></li>
-                  </ul>
-                </li>
-                
-                <!-- Home & Kitchen as single-level -->
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">Home Kitchen</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
-                    <li><a class="dropdown-item" href="#">Laptops</a></li>
-                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
-                    <li><a class="dropdown-item" href="#">Laptops</a></li>
-                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
-                    <li><a class="dropdown-item" href="#">Laptops</a></li>
-                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
-                    <li><a class="dropdown-item" href="#">Laptops</a></li>
-                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
-                    <li><a class="dropdown-item" href="#">Laptops</a></li>
-                    <li><a class="dropdown-item" href="#">Smart Watches</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brands</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Delivery Info</a></li>
-                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                <li><a class="dropdown-item" href="#">Terms</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Others</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  
-    <!-- Mobile Search Bar -->
-    <div class="search-bar d-block d-md-none bg-light py-2">
-      <div class="container">
-        <form class="d-flex">
-          <input class="form-control" type="search" placeholder="Search for products...">
-          <button class="btn btn-success ms-2" type="submit"><i class="bi bi-search"></i></button>
-        </form>
-      </div>
-    </div>
-  
-    <!-- Sidebar -->
-    <nav id="sidebar">
-      <div class="sidebar-header">
-        <div class="container">
+      </nav>
+
+      <div class="bg-warning border-top">
+        <div class="container-fluid py-2">
           <div class="row align-items-center">
-            <div class="col-10">
-              <a class="btn btn-primary" href="signup.html"><i class="bi bi-person-circle"></i> Log In</a>
+            <div class="col-lg-4 col-6 position-relative">
+              <div class="dropdown">
+                <button
+                  class="btn btn-outline-dark rounded-pill px-4 py-2 d-flex align-items-center gap-2"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-grid-fill"></i>
+                  <span>Browse Categories</span>
+                </button>
+
+                <ul
+                  class="dropdown-menu border-0 shadow-lg p-3 rounded-4 mt-2 w-100 custom-dropdown"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center gap-3 py-2 px-3 rounded-3 category-link"
+                      href="#"
+                    >
+                      <i class="bi bi-ev-front text-primary fs-5"></i>
+                      Electronics
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center gap-3 py-2 px-3 rounded-3 category-link"
+                      href="#"
+                    >
+                      <i class="bi bi-border-style text-danger fs-5"></i>
+                      Fashion
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center gap-3 py-2 px-3 rounded-3 category-link"
+                      href="#"
+                    >
+                      <i class="bi bi-scooter text-success fs-5"></i> Sports
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center gap-3 py-2 px-3 rounded-3 category-link"
+                      href="#"
+                    >
+                      <i class="bi bi-handbag text-warning fs-5"></i> Grocery
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item d-flex align-items-center gap-3 py-2 px-3 rounded-3 category-link"
+                      href="#"
+                    >
+                      <i class="bi bi-emoji-smile-fill text-info fs-5"></i> Care
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-2 text-end">
-              <button type="button" id="sidebarCollapseX" class="btn btn-link">
-                <i class="bi bi-person"></i>
-              </button>
+
+            <!-- Menu Links -->
+            <div class="col-lg-4 d-none d-lg-block">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="product.html"
+                    >Products</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="Terms.html">Other</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Support Icons -->
+            <div
+              class="col-lg-4 col-6 d-flex justify-content-end align-items-center gap-3 text-white"
+            >
+              <a href="contact.html" class="text-white fs-5"
+                ><i class="bi bi-headset"></i
+              ></a>
+              <a href="cart.html" class="text-white fs-5"
+                ><i class="bi bi-bag"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
-      <ul class="list-unstyled components">
-        <li><a href="home.html"><i class="bi bi-house"></i> Home</a></li>
-        <li><a href="product.html"><i class="bi bi-basket2"></i> Products</a></li>
-        <li><a href="wishlistProduct.html"><i class="bi bi-bag-heart"></i> Wishlist</a></li>
-        <li><a href="#"><i class="bi bi-cart-plus"></i> Cart</a></li>
-        <li>
-          <a href="#supportSubmenu" data-bs-toggle="collapse" class="dropdown-toggle"><i class="bi bi-patch-question"></i> Support</a>
-          <ul class="collapse list-unstyled" id="supportSubmenu">
-            <li><a href="Delivery.html">Delivery Info</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="Terms.html">Terms & Conditions</a></li>
-          </ul>
-        </li>
-        <li><a href="#"><i class="bi bi-telephone-fill"></i> Contact</a></li>
-      </ul>
-      <h6 class="text-uppercase mt-4">Categories</h6>
-      <ul class="list-unstyled">
-        <li><a href="#">Category 1</a></li>
-        <li><a href="#">Category 2</a></li>
-        <li><a href="#">Category 3</a></li>
-        <li><a href="#">Category 4</a></li>
-        <li><a href="#">Category 5</a></li>
-        <li><a href="#">Category 6</a></li>
-      </ul>
-      <ul class="social-icons list-inline mt-4">
-        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-5"></i></a>
-          <a href="#" class="text-white"><i class="bi bi-youtube fs-5"></i></a>
-      </ul>
-    </nav>
-    <div class="overlay"></div>
-   </div>
 
-   <section class="faq p-5 my-4">
-        <div class="text-center">
-            <h4 class="text-white fw-bold">Frequently Asked Question</h4>
-            <p class="text-white">home > Faq</p>
+      <div
+        class="offcanvas offcanvas-start bg-dark text-white"
+        tabindex="-1"
+        id="offcanvasNav"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
         </div>
-   </section>
+        <div class="offcanvas-body">
+          <form class="d-flex mb-3">
+            <input
+              type="text"
+              class="form-control me-2"
+              placeholder="Search..."
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
 
-   <section class="container">
-    <div>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-   </section>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Brand</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Other</a>
+            </li>
+          </ul>
 
-   <footer class="bg-success text-white pt-5 pb-4 mt-2">
-    <div class="container text-md-left">
-      <div class="row text-md-left">
-  
-       
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-          <h5 class="text-uppercase fw-bold mb-4">YourBrand</h5>
-          <p>High-quality products delivered right to your doorstep. Shop smart, live better.</p>
-        </div>
-  
-    
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-semibold mb-4">Quick Links</h6>
-          <ul class="list-unstyled">
-            <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
-            <li><a href="Terms.html" class="text-white text-decoration-none">Terms and Condition</a></li>
-            <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
-            <li><a href="privacy-policy.html" class="text-white text-decoration-none">Refund and Return Policy</a></li>
-            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
-          </ul>
-        </div>
-  
-       
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-semibold mb-4">Categories</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">Electronics</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Clothing</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Fitness</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Books</a></li>
-          </ul>
-        </div>
-  
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-semibold mb-4">Contact</h6>
-          <p><i class="bi bi-house-door-fill me-2"></i> Dhaka, Bangladesh</p>
-          <p><i class="bi bi-envelope-fill me-2"></i> info@example.com</p>
-          <p><i class="bi bi-phone-fill me-2"></i> +880 123 456 789</p>
-  
-          <div class="mt-3">
-            <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-5"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-youtube fs-5"></i></a>
+          <hr class="bg-white" />
+
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5"><i class="bi bi-bag"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-heart"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-person"></i></a>
           </div>
         </div>
       </div>
-    </div>
-  
-    <div class="text-center mt-4 pt-3 border-top border-secondary">
-      <p class="mb-0 small">&copy; 2025 YourBrand. All rights reserved.</p>
-    </div>
-  </footer>
+    </section>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-</body>
+    <div class="faq-section">
+      <header>
+        <h2 class="text-dark header">FAQs</h2>
+        <p class="text-dark">Answers to the most frequently asked questions.</p>
+      </header>
+
+      <! Adding the name atribute to details will enable to have only one disclosure box open>
+
+      <details name="question">
+        <summary>
+          <h4 class="text-dark faq-head">Why is Raycast free for personal use?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4 text-dark"></i>
+          </span>
+        </summary>
+        <p class="text-dark">
+          We think of Raycast as a productivity layer that everybody should use
+          to get work done faster. To make it accessible, we don't charge for
+          the individual plan. The plan covers all built-in extensions, such as
+          Clipboard History, Calendar or Window Management and provides access
+          to all public extensions built by our community.
+        </p>
+      </details>
+
+      <hr />
+
+      <details name="question">
+        <summary>
+          <h4 class="text-dark faq-head">When is Raycast for teams available?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4 text-dark"></i>
+          </span>
+        </summary>
+        <p class="text-dark faq-head">
+          We don't have an exact date right now, but we will launch Raycast for
+          Teams in 2022. You can sign up to get early access above, and be the
+          first to hear when we're launching it.
+        </p>
+      </details>
+
+      <hr />
+
+      <details name="question">
+        <summary>
+          <h4 class="text-dark faq-head">How many seats do I get in a Team plan?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4 text-dark"></i>
+          </span>
+        </summary>
+        <p class="text-dark faq-head">
+          We don't have an exact date right now, but we will launch Raycast for
+          Teams in 2022. You can sign up to get early access above, and be the
+          first to hear when we're launching it.
+        </p>
+      </details>
+
+      <hr />
+
+      <details name="question">
+        <summary>
+          <h4 class="text-dark faq-head">Can I have personal Extensions and Team Extensions?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4 text-dark"></i>
+          </span>
+        </summary>
+        <p class="text-dark">
+          Yes, you can create personal Extensions that are personalized to you,
+          and speed up your productivity, and have team Extensions that can be
+          shared around in your organization for everyone to use. Team
+          Extensions will be available in the Store command, behind a filter for
+          your Team. This is where all of your Team Extensions will live, and
+          where you can install them.
+        </p>
+      </details>
+
+      <hr />
+
+      <details name="question">
+        <summary>
+          <h4 class="text-dark faq-head">How much will Team features cost?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4 text-dark"></i>
+          </span>
+        </summary>
+        <p class="text-dark">Team features will cost $10 per user, per month.</p>
+      </details>
+    </div>
+
+    <section class="container my-5">
+      <div class="row g-4">
+        <!-- Smart Watch Promo -->
+        <div class="col-md-6">
+          <div
+            class="promo-card position-relative text-white rounded overflow-hidden shadow-lg"
+          >
+            <img
+              src="asset/images/products/smart watch.jpg"
+              class="w-100 h-100 object-fit-cover"
+              alt="Smart Watch"
+            />
+            <div
+              class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4"
+            >
+              <h2 class="mb-2 fw-bold">Smart Watches</h2>
+              <p class="mb-3">Discover the latest in wearable tech.</p>
+              <a href="#" class="btn btn-outline-light">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telephone Promo -->
+        <div class="col-md-6">
+          <div
+            class="promo-card position-relative text-white rounded overflow-hidden shadow-lg"
+          >
+            <img
+              src="asset/images/products/telephone.jpg"
+              class="w-100 h-100 object-fit-cover"
+              alt="Telephone"
+            />
+            <div
+              class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4"
+            >
+              <h2 class="mb-2 fw-bold">Classic Telephones</h2>
+              <p class="mb-3">Timeless design meets functionality.</p>
+              <a href="#" class="btn btn-outline-light">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-warning pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h5 class="text-uppercase fw-bold mb-4">YourBrand</h5>
+            <p>
+              High-quality products delivered right to your doorstep. Shop
+              smart, live better.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-semibold mb-4">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="home.html" class="text-dark text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="Terms.html" class="text-dark text-decoration-none"
+                  >Terms and Condition</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy-policy.html"
+                  class="text-dark text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy-policy.html"
+                  class="text-dark text-decoration-none"
+                  >Refund and Return Policy</a
+                >
+              </li>
+              <li>
+                <a href="FrequentlyAskedQuestion.html" class="text-dark text-decoration-none"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-semibold mb-4">Categories</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Electronics</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Clothing</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Fitness</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Books</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-semibold mb-4">Contact</h6>
+            <p><i class="bi bi-house-door-fill me-2"></i> Dhaka, Bangladesh</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> info@example.com</p>
+            <p><i class="bi bi-phone-fill me-2"></i> +880 123 456 789</p>
+
+            <div class="mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-twitter-x fs-5"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 pt-3 border-top border-secondary">
+        <p class="mb-0 small">&copy; 2025 YourBrand. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
