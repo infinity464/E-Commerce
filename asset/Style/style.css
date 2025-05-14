@@ -182,6 +182,28 @@ li {
   border: 2px solid #ddd;
 }
 
+.product-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hover-icons {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .hover-icons {
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .sticky-top {
+    position: static !important;
+  }
+}
+
+
 .color1 {
   background-color: #f44336;
 }
@@ -395,7 +417,7 @@ li {
 
 .icon-btn:hover {
   transform: scale(1.1);
-  color: #198754; /* Bootstrap success */
+  color: #198754; 
 }
 
 .cursor-pointer {
