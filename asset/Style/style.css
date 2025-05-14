@@ -80,6 +80,14 @@
   position: relative;
 }
 
+form input::placeholder {
+  color: #888;
+}
+
+form button:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
 
 
 .lato-black-italic {
