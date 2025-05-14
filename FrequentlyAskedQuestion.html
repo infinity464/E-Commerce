@@ -18,7 +18,7 @@
     <title>FAQ</title>
   </head>
   <body>
-   <section id="navigation">
+    <section id="navigation">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
         <div class="container-fluid">
           <a class="navbar-brand fw-bold fs-4" href="#">Logo</a>
@@ -51,10 +51,15 @@
 
           <!-- Icons -->
           <div class="d-flex align-items-center gap-3 text-white">
-            <a href="cart.html" class="text-white fs-5"><i class="bi bi-bag"></i></a>
-            <a href="wishlistProduct.html" class="text-white fs-5"><i class="bi bi-heart"></i></a>
+            <a href="cart.html" class="text-white fs-5"
+              ><i class="bi bi-bag"></i
+            ></a>
+            <a href="wishlistProduct.html" class="text-white fs-5"
+              ><i class="bi bi-heart"></i
+            ></a>
             <a href="AccountSetting.html" class="text-white fs-5"
-              ><i class="bi bi-person"></i></a>
+              ><i class="bi bi-person"></i
+            ></a>
           </div>
         </div>
       </nav>
@@ -153,7 +158,9 @@
               <a href="contact.html" class="text-white fs-5"
                 ><i class="bi bi-headset"></i
               ></a>
-              <a href="cart.html" class="text-white fs-5"><i class="bi bi-bag"></i></a>
+              <a href="cart.html" class="text-white fs-5"
+                ><i class="bi bi-bag"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -213,107 +220,132 @@
       </div>
     </section>
 
-    <section class="faq p-5 my-4">
-      <div class="text-center">
-        <h4 class="text-white fw-bold">Frequently Asked Question</h4>
-        <p class="text-white">home > Faq</p>
-      </div>
-    </section>
+    <div class="faq-section">
+      <header>
+        <h2 class="text-dark">FAQs</h2>
+        <p class="text-dark">Answers to the most frequently asked questions.</p>
+      </header>
 
-    <section class="container">
-      <div>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Accordion Item #1
-              </button>
-            </h2>
+      <! Adding the name atribute to details will enable to have only one disclosure box open>
+
+      <details name="question">
+        <summary>
+          <h4>Why is Raycast free for personal use?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4"></i>
+          </span>
+        </summary>
+        <p>
+          We think of Raycast as a productivity layer that everybody should use
+          to get work done faster. To make it accessible, we don't charge for
+          the individual plan. The plan covers all built-in extensions, such as
+          Clipboard History, Calendar or Window Management and provides access
+          to all public extensions built by our community.
+        </p>
+      </details>
+
+      <hr />
+
+      <details name="question">
+        <summary>
+          <h4>When is Raycast for teams available?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4"></i>
+          </span>
+        </summary>
+        <p>
+          We don't have an exact date right now, but we will launch Raycast for
+          Teams in 2022. You can sign up to get early access above, and be the
+          first to hear when we're launching it.
+        </p>
+      </details>
+
+      <hr />
+
+      <details name="question">
+        <summary>
+          <h4>How many seats do I get in a Team plan?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4"></i>
+          </span>
+        </summary>
+        <p>
+          We don't have an exact date right now, but we will launch Raycast for
+          Teams in 2022. You can sign up to get early access above, and be the
+          first to hear when we're launching it.
+        </p>
+      </details>
+
+      <hr />
+
+      <details name="question">
+        <summary>
+          <h4>Can I have personal Extensions and Team Extensions?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4"></i>
+          </span>
+        </summary>
+        <p>
+          Yes, you can create personal Extensions that are personalized to you,
+          and speed up your productivity, and have team Extensions that can be
+          shared around in your organization for everyone to use. Team
+          Extensions will be available in the Store command, behind a filter for
+          your Team. This is where all of your Team Extensions will live, and
+          where you can install them.
+        </p>
+      </details>
+
+      <hr />
+
+      <details name="question">
+        <summary>
+          <h4>How much will Team features cost?</h4>
+          <span class="material-symbols-outlined">
+            <i class="bi bi-chevron-down fs-4"></i>
+          </span>
+        </summary>
+        <p>Team features will cost $10 per user, per month.</p>
+      </details>
+    </div>
+    
+    <section class="container my-5">
+      <div class="row g-4">
+        <!-- Smart Watch Promo -->
+        <div class="col-md-6">
+          <div
+            class="promo-card position-relative text-white rounded overflow-hidden shadow-lg"
+          >
+            <img
+              src="asset/images/products/smart watch.jpg"
+              class="w-100 h-100 object-fit-cover"
+              alt="Smart Watch"
+            />
             <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
+              class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4"
             >
-              <div class="accordion-body">
-                <strong>This is the first item’s accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It’s also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
+              <h2 class="mb-2 fw-bold">Smart Watches</h2>
+              <p class="mb-3">Discover the latest in wearable tech.</p>
+              <a href="#" class="btn btn-outline-light">Shop Now</a>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Accordion Item #2
-              </button>
-            </h2>
+        </div>
+
+        <!-- Telephone Promo -->
+        <div class="col-md-6">
+          <div
+            class="promo-card position-relative text-white rounded overflow-hidden shadow-lg"
+          >
+            <img
+              src="asset/images/products/telephone.jpg"
+              class="w-100 h-100 object-fit-cover"
+              alt="Telephone"
+            />
             <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4"
             >
-              <div class="accordion-body">
-                <strong>This is the second item’s accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It’s also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Accordion Item #3
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item’s accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It’s also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
+              <h2 class="mb-2 fw-bold">Classic Telephones</h2>
+              <p class="mb-3">Timeless design meets functionality.</p>
+              <a href="#" class="btn btn-outline-light">View All</a>
             </div>
           </div>
         </div>
