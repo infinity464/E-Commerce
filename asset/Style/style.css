@@ -160,6 +160,16 @@ li {
   top: 80px; /* Adjust based on your navbar height */
 }
 
+.custom-dropdown {
+  background-color: #fff;
+}
+
+.category-link:hover {
+  background-color: #f1f5f9;
+  color: #000;
+  text-decoration: none;
+}
+
 .color1,
 .color2,
 .color3,
