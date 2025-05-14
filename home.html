@@ -1,1025 +1,1269 @@
-<!doctype html>
+<!-- @format -->
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>E-Commerce</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="asset/Style/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="asset/Style/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-4" href="#">Logo</a>
 
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-  <div class="container-fluid">
-   
-    <a class="navbar-brand fw-bold fs-4" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
- 
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-
-    <form class="d-none d-lg-flex mx-auto w-50">
-      <input type="text" class="form-control me-2" placeholder="What can I help you with today?">
-      <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
-    </form>
-
-    <!-- Icons -->
-    <div class="d-flex align-items-center gap-3 text-white">
-      <a href="#" class="text-white fs-5"><i class="bi bi-bag"></i></a>
-      <a href="#" class="text-white fs-5"><i class="bi bi-heart"></i></a>
-      <a href="#" class="text-white fs-5"><i class="bi bi-box-arrow-in-right"></i></a>
-    </div>
-  </div>
-</nav>
-
-<div class="bg-warning border-top">
-  <div class="container-fluid py-2">
-    <div class="row align-items-center">
-
-      <div class="col-lg-4 col-6 position-relative">
-        <div class="dropdown">
-          <button class="btn btn-dark text-white dropdown-toggle w-80 p-2" type="button" data-bs-toggle="dropdown">
-            <i class="bi bi-list"></i> Categories
+        <form class="d-none d-lg-flex mx-auto w-50">
+          <input
+            type="text"
+            class="form-control me-2"
+            placeholder="What can I help you with today?"
+          />
+          <button class="btn btn-outline-light" type="submit">
+            <i class="bi bi-search"></i>
           </button>
-          <ul class="dropdown-menu mt-1">
-            <li><a class="dropdown-item" href="#">Electronics</a></li>
-            <li><a class="dropdown-item" href="#">Clothing</a></li>
-            <li><a class="dropdown-item" href="#">Home Appliances</a></li>
-            <li><a class="dropdown-item" href="#">Books</a></li>
-            <li><a class="dropdown-item" href="#">Accessories</a></li>
-          </ul>
+        </form>
+
+        <!-- Icons -->
+        <div class="d-flex align-items-center gap-3 text-white">
+          <a href="#" class="text-white fs-5"><i class="bi bi-bag"></i></a>
+          <a href="#" class="text-white fs-5"><i class="bi bi-heart"></i></a>
+          <a href="#" class="text-white fs-5"
+            ><i class="bi bi-box-arrow-in-right"></i
+          ></a>
         </div>
       </div>
+    </nav>
 
-      <!-- Menu Links -->
-      <div class="col-lg-4 d-none d-lg-block">
-        <ul class="nav justify-content-center">
-          <li class="nav-item"><a class="nav-link text-white" href="home.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="product.html">Products</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="Terms.html">Other</a></li>
+    <div class="bg-warning border-top">
+      <div class="container-fluid py-2">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-6 position-relative">
+            <div class="dropdown">
+              <button
+                class="btn btn-dark text-white dropdown-toggle w-80 p-2"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="bi bi-list"></i> Categories
+              </button>
+              <ul class="dropdown-menu mt-1">
+                <li><a class="dropdown-item" href="#">Electronics</a></li>
+                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                <li><a class="dropdown-item" href="#">Books</a></li>
+                <li><a class="dropdown-item" href="#">Accessories</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Menu Links -->
+          <div class="col-lg-4 d-none d-lg-block">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Terms.html">Other</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support Icons -->
+          <div
+            class="col-lg-4 col-6 d-flex justify-content-end align-items-center gap-3 text-white"
+          >
+            <a href="#" class="text-white fs-5"
+              ><i class="bi bi-headset"></i
+            ></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-bag"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div
+      class="offcanvas offcanvas-start bg-dark text-white"
+      tabindex="-1"
+      id="offcanvasNav"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <form class="d-flex mb-3">
+          <input
+            type="text"
+            class="form-control me-2"
+            placeholder="Search..."
+          />
+          <button class="btn btn-outline-light" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Brand</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Other</a>
+          </li>
         </ul>
-      </div>
 
-      <!-- Support Icons -->
-      <div class="col-lg-4 col-6 d-flex justify-content-end align-items-center gap-3 text-white">
-        <a href="#" class="text-white fs-5"><i class="bi bi-headset"></i></a>
-        <a href="#" class="text-white fs-5"><i class="bi bi-bag"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
+        <hr class="bg-white" />
 
-<!-- Offcanvas Menu for Mobile -->
-<div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasNav">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Menu</h5>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
-    <form class="d-flex mb-3">
-      <input type="text" class="form-control me-2" placeholder="Search...">
-      <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
-    </form>
-
-    <ul class="nav flex-column">
-      <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#">Products</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#">Brand</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#">Category</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#">Other</a></li>
-    </ul>
-
-    <hr class="bg-white">
-
-    <div class="d-flex gap-3">
-      <a href="#" class="text-white fs-5"><i class="bi bi-bag"></i></a>
-      <a href="#" class="text-white fs-5"><i class="bi bi-heart"></i></a>
-      <a href="#" class="text-white fs-5"><i class="bi bi-box-arrow-in-right"></i></a>
-    </div>
-  </div>
-</div>
- <section class="hero section py-4">
-  <div class="">
-    <div class="row gx-4 gy-3 mx-auto">
-      
-      <!-- Main Banner with Text -->
-      <div class="col-md-8 position-relative">
-        <div class="position-relative">
-          <img src="asset/images/hero-images/banner.jpg" class="img-fluid w-100 rounded" alt="Main Banner">
-          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 bg-dark bg-opacity-25 text-white rounded">
-            <h2 class="mb-1 fw-bold">Main Banner Title</h2>
-            <p class="mb-3 text-white">This is a short subheading for the main banner.</p>
-            <a href="#" class="btn btn-light btn-sm w-25">Shop Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- First Side Image -->
-      <div class="col-md-4 d-flex flex-column gap-3">
-        <div class="position-relative">
-          <img src="asset/images/hero-images/hero-1.jpg" class="img-fluid rounded" alt="Side Image 1">
-          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 bg-dark bg-opacity-25 text-white rounded">
-            <h5 class="mb-1 fw-bold">Hero 1 Title</h5>
-            <p class="mb-2  text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores impedit accusamus, dolorem quae assumenda in!</p>
-            
-          </div>
-        </div>
-
-        <!-- Second Side Image -->
-        <div class="position-relative">
-          <img src="asset/images/hero-images/hero-2.jpg" class="img-fluid rounded" alt="Side Image 2">
-          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 bg-dark bg-opacity-25 text-white rounded">
-            <h5 class="mb-1 fw-bold">Hero 2 Title</h5>
-            <p class="mb-2 small text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam unde eligendi fugiat, excepturi harum dicta.</p>
-           
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- <section id="category" class="container my-5">
-  <h2 class="fw-bold mb-4 text-center">Popular Categories</h2>
-
-  <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-between text-center">
-     
-          <div class="category wow animate__animated  mx-2" data-wow-delay="0.1s">
-            <img src="asset/images/icons/brand.png" class="img-fluid category-img mb-2" alt="Clothing">
-            <p>Clothing</p>
-          </div>
-          
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/gadgets.png" class="img-fluid category-img mb-2" alt="Gadget">
-            <p>Gadget</p>
-          </div>
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Sofa">
-            <p>Sofa</p>
-          </div>
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/phone.png" class="img-fluid category-img mb-2" alt="Phone">
-            <p>Phone</p>
-          </div>
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/laptop.png" class="img-fluid category-img mb-2" alt="Laptop">
-            <p>Laptop</p>
-          </div>
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/room.png" class="img-fluid category-img mb-2" alt="Furniture">
-            <p>Furniture</p>
-          </div>
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/audio-book.png" class="img-fluid category-img mb-2" alt="Audio">
-            <p>Audio</p>
-          </div>
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/gardening.png" class="img-fluid category-img mb-2" alt="Garden">
-            <p>Garden</p>
-          </div>
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/cosmetics.png" class="img-fluid category-img mb-2" alt="Beauty">
-            <p>Beauty</p>
-          </div>
-          <div class="category wow animate__animated animate__fadeInUp mx-2">
-            <img src="asset/images/icons/baby.png" class="img-fluid category-img mb-2" alt="Baby">
-            <p>Baby</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="d-flex justify-content-between text-center">
-          <div class="category">
-            <img src="asset/images/icons/football.png" class="img-fluid category-img mb-2" alt="Sports">
-            <p>Sports</p>
-          </div>
-          <div class="category mx-2">
-            <img src="asset/images/icons/stack-of-books.png" class="img-fluid category-img mb-2" alt="Book">
-            <p>Book</p>
-          </div>
-          
-          <div class="category mx-2">
-            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
-            <p>sofa</p>
-          </div>
-          <div class="category mx-2">
-            <img src="asset/images/icons/gardening.png" class="img-fluid category-img mb-2" alt="Extra">
-            <p>Extra</p>
-          </div>
-          <div class="category mx-2">
-            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
-            <p>sofa</p>
-          </div>
-          <div class="category mx-2">
-            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
-            <p>sofa</p>
-          </div>
-          <div class="category mx-2">
-            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
-            <p>sofa</p>
-          </div>
-          <div class="category mx-2">
-            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
-            <p>sofa</p>
-          </div>
-          <div class="category mx-2">
-            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
-            <p>sofa</p>
-          </div>
-          <div class="category mx-2">
-            <img src="asset/images/icons/sofa.png" class="img-fluid category-img mb-2" alt="Extra">
-            <p>sofa</p>
-          </div>
-       
-        </div>
-      </div>
-
-    </div>
-
- 
-    <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-    </button>
-  </div>
-</section> -->
-
-<section class="categories container mt-5">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <div>
-      <h2 class="fw-bold mb-0">Categories</h2>
-      <p class="text-muted">Discover our top picks just for you</p>
-    </div>
-    <div>
-      <button class="btn btn-outline-dark btn-sm me-2" data-bs-target="#categoryCarousel" data-bs-slide="prev">
-        <i class="bi bi-chevron-left"></i>
-      </button>
-      <button class="btn btn-outline-dark btn-sm" data-bs-target="#categoryCarousel" data-bs-slide="next">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-    </div>
-  </div>
-
-  <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="row">
-          <!-- 6 items per slide -->
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/laptop.png" class="images-cat" alt="Laptop">
-            </div>
-            <h6 class="fw-bold">Laptop</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/stack-of-books.png" class="images-cat" alt="Books">
-            </div>
-            <h6 class="fw-bold">Book</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/gadgets.png" class="images-cat" alt="Gadget">
-            </div>
-            <h6 class="fw-bold">Gadget</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/room.png" class="images-cat" alt="Furniture">
-            </div>
-            <h6 class="fw-bold">Furniture</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/football.png" class="images-cat" alt="Sports Items">
-            </div>
-            <h6 class="fw-bold">Sports Items</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/cosmetics.png" class="images-cat" alt="Care">
-            </div>
-            <h6 class="fw-bold">Care</h6>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/brand.png" class="images-cat" alt="Audio">
-            </div>
-            <h6 class="fw-bold">Headphones</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/sofa.png" class="images-cat" alt="Gaming">
-            </div>
-            <h6 class="fw-bold">Gaming</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/cosmetics.png" class="images-cat" alt="Fashion">
-            </div>
-            <h6 class="fw-bold">Fashion</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/gardening.png" class="images-cat" alt="Grocery">
-            </div>
-            <h6 class="fw-bold">Grocery</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/baby.png" class="images-cat" alt="Toys">
-            </div>
-            <h6 class="fw-bold">Toys</h6>
-          </div>
-          <div class="col-6 col-md-2 text-center">
-            <div class="categories-items mb-2 d-flex justify-content-center align-items-center">
-              <img src="asset/images/icons/room.png" class="images-cat" alt="Appliances">
-            </div>
-            <h6 class="fw-bold">Appliances</h6>
-          </div>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white fs-5"><i class="bi bi-bag"></i></a>
+          <a href="#" class="text-white fs-5"><i class="bi bi-heart"></i></a>
+          <a href="#" class="text-white fs-5"
+            ><i class="bi bi-box-arrow-in-right"></i
+          ></a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+    <section class="hero section py-4">
+      <div class="">
+        <div class="row gx-4 gy-3 mx-auto">
+          <!-- Main Banner with Text -->
+          <div class="col-md-8 position-relative">
+            <div class="position-relative">
+              <img
+                src="asset/images/hero-images/banner.jpg"
+                class="img-fluid w-100 rounded"
+                alt="Main Banner"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4 bg-dark bg-opacity-25 text-white rounded"
+              >
+                <h2 class="mb-1 fw-bold">Main Banner Title</h2>
+                <p class="mb-3 text-white">
+                  This is a short subheading for the main banner.
+                </p>
+                <a href="#" class="btn btn-light btn-sm w-25">Shop Now</a>
+              </div>
+            </div>
+          </div>
 
+          <!-- First Side Image -->
+          <div class="col-md-4 d-flex flex-column gap-3">
+            <div class="position-relative">
+              <img
+                src="asset/images/hero-images/hero-1.jpg"
+                class="img-fluid rounded"
+                alt="Side Image 1"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 bg-dark bg-opacity-25 text-white rounded"
+              >
+                <h5 class="mb-1 fw-bold">Hero 1 Title</h5>
+                <p class="mb-2 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores impedit accusamus, dolorem quae assumenda in!
+                </p>
+              </div>
+            </div>
 
-<!-- Featured Products -->
-<section id="feature-product" class="container my-5 wow bounceInUp">
-  <div class="mb-5">
-    <h2 class="fw-bold">Featured Products</h2>
-    <hr class="w-25">
-    <p class="text-muted">Discover our top picks just for you</p>
-  </div>
-
-  <div class="row g-3">
-
-
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/fashion.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
+            <!-- Second Side Image -->
+            <div class="position-relative">
+              <img
+                src="asset/images/hero-images/hero-2.jpg"
+                class="img-fluid rounded"
+                alt="Side Image 2"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 bg-dark bg-opacity-25 text-white rounded"
+              >
+                <h5 class="mb-1 fw-bold">Hero 2 Title</h5>
+                <p class="mb-2 small text-white">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aliquam unde eligendi fugiat, excepturi harum dicta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+    </section>
+
+    <section class="categories container mt-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+          <h2 class="fw-bold mb-0">Categories</h2>
+          <p class="text-muted">Discover our top picks just for you</p>
         </div>
         <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
+          <button
+            class="btn btn-outline-dark btn-sm me-2"
+            data-bs-target="#categoryCarousel"
+            data-bs-slide="prev"
+          >
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button
+            class="btn btn-outline-dark btn-sm"
+            data-bs-target="#categoryCarousel"
+            data-bs-slide="next"
+          >
+            <i class="bi bi-chevron-right"></i>
+          </button>
         </div>
       </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/fragnance.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/spray.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/watch.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="row g-3">
-      <div class="col-md-6">
 
-      </div>
-      <div class="col-md-6">
+      <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- 6 items per slide -->
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/laptop.png"
+                      class="images-cat"
+                      alt="Laptop"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Laptop</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/stack-of-books.png"
+                      class="images-cat"
+                      alt="Books"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Book</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/gadgets.png"
+                      class="images-cat"
+                      alt="Gadget"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Gadget</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/room.png"
+                      class="images-cat"
+                      alt="Furniture"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Furniture</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/football.png"
+                      class="images-cat"
+                      alt="Sports Items"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Sports Items</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/cosmetics.png"
+                      class="images-cat"
+                      alt="Care"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Care</h6>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Promo Banners -->
-<section class="container my-5">
-  <div class="row g-4">
-    <!-- Smart Watch Promo -->
-    <div class="col-md-6">
-      <div class="promo-card position-relative text-white rounded overflow-hidden shadow-lg">
-        <img src="asset/images/products/smart watch.jpg" class="w-100 h-100 object-fit-cover" alt="Smart Watch">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4">
-          <h2 class="mb-2 fw-bold">Smart Watches</h2>
-          <p class="mb-3">Discover the latest in wearable tech.</p>
-          <a href="#" class="btn btn-outline-light">Shop Now</a>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/brand.png"
+                      class="images-cat"
+                      alt="Audio"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Headphones</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/sofa.png"
+                      class="images-cat"
+                      alt="Gaming"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Gaming</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/cosmetics.png"
+                      class="images-cat"
+                      alt="Fashion"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Fashion</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/gardening.png"
+                      class="images-cat"
+                      alt="Grocery"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Grocery</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/baby.png"
+                      class="images-cat"
+                      alt="Toys"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Toys</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 text-center">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div
+                    class="categories-items mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="asset/images/icons/room.png"
+                      class="images-cat"
+                      alt="Appliances"
+                    />
+                  </div>
+                  <h6 class="fw-bold">Appliances</h6>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Telephone Promo -->
-    <div class="col-md-6">
-      <div class="promo-card position-relative text-white rounded overflow-hidden shadow-lg">
-        <img src="asset/images/products/telephone.jpg" class="w-100 h-100 object-fit-cover" alt="Telephone">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4">
-          <h2 class="mb-2 fw-bold">Classic Telephones</h2>
-          <p class="mb-3">Timeless design meets functionality.</p>
-          <a href="#" class="btn btn-outline-light">View All</a>
+    <!-- Featured Products -->
+    <section id="feature-product" class="container my-5 wow bounceInUp">
+      <div class="mb-5">
+        <h2 class="fw-bold">Featured Products</h2>
+        <hr class="w-25" />
+        <p class="text-muted">Discover our top picks just for you</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col products bg-white shadow-sm">
+          <img
+            src="asset/images/products/fashion.jpg"
+            class="img-fluid rounded"
+            alt=""
+          />
+
+          <div class="col-md-3">
+            <h5 class="fw-bold mt-2">Avocado</h5>
+            <p class="fw-bold text-success">
+              $20 <del class="text-secondary fs-6">$25</del>
+            </p>
+          </div>
+          <div class="my-3">
+            <span class=""
+              >4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span
+            >
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <button class="btn btn-outline-dark">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+            <div>
+              <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+            </div>
+            <div>
+              <i
+                class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="col products bg-white shadow-sm">
+          <img
+            src="asset/images/products/fragnance.jpg"
+            class="img-fluid rounded"
+            alt=""
+          />
+
+          <div class="col-md-3">
+            <h5 class="fw-bold mt-2">Avocado</h5>
+            <p class="fw-bold text-success">
+              $20 <del class="text-secondary fs-6">$25</del>
+            </p>
+          </div>
+          <div class="my-3">
+            <span class=""
+              >4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span
+            >
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <button class="btn btn-outline-dark">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+            <div>
+              <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+            </div>
+            <div>
+              <i
+                class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="col products bg-white shadow-sm">
+          <img
+            src="asset/images/products/spray.jpg"
+            class="img-fluid rounded"
+            alt=""
+          />
+
+          <div class="col-md-3">
+            <h5 class="fw-bold mt-2">Avocado</h5>
+            <p class="fw-bold text-success">
+              $20 <del class="text-secondary fs-6">$25</del>
+            </p>
+          </div>
+          <div class="my-3">
+            <span class=""
+              >4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span
+            >
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <button class="btn btn-outline-dark">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+            <div>
+              <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+            </div>
+            <div>
+              <i
+                class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="col products bg-white shadow-sm">
+          <img
+            src="asset/images/products/watch.jpg"
+            class="img-fluid rounded"
+            alt=""
+          />
+
+          <div class="col-md-3">
+            <h5 class="fw-bold mt-2">Avocado</h5>
+            <p class="fw-bold text-success">
+              $20 <del class="text-secondary fs-6">$25</del>
+            </p>
+          </div>
+          <div class="my-3">
+            <span class=""
+              >4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span
+            >
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <button class="btn btn-outline-dark">
+              <i class="bi bi-cart-plus"></i> Add to Cart
+            </button>
+            <div>
+              <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+            </div>
+            <div>
+              <i
+                class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+              ></i>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Top Selling Products -->
-<section class="container my-5">
-  <div class="mb-5 text-center">
-    <h2 class="fw-bold">Top Selling Products</h2>
-    <hr class="w-25 mx-auto">
-    <p class="text-muted">Discover our top picks just for you</p>
-  </div>
-  <div class="row g-4">
-    <div class="col-md-6">
-      <div class="position-relative product-hover">
-        <img src="asset/images/products/watch.jpg" class="img-fluid rounded shadow-sm" alt="Main Product">
-        <a href="#" class="btn btn-outline-dark btn-sm see-details-btn">See Details</a>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-6"></div>
+          <div class="col-md-6"></div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-2">
-        <div class="col-4">
+    </section>
+
+    <!-- Promo Banners -->
+    <section class="container my-5">
+      <div class="row g-4">
+        <!-- Smart Watch Promo -->
+        <div class="col-md-6">
+          <div
+            class="promo-card position-relative text-white rounded overflow-hidden shadow-lg"
+          >
+            <img
+              src="asset/images/products/smart watch.jpg"
+              class="w-100 h-100 object-fit-cover"
+              alt="Smart Watch"
+            />
+            <div
+              class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4"
+            >
+              <h2 class="mb-2 fw-bold">Smart Watches</h2>
+              <p class="mb-3">Discover the latest in wearable tech.</p>
+              <a href="#" class="btn btn-outline-light">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Telephone Promo -->
+        <div class="col-md-6">
+          <div
+            class="promo-card position-relative text-white rounded overflow-hidden shadow-lg"
+          >
+            <img
+              src="asset/images/products/telephone.jpg"
+              class="w-100 h-100 object-fit-cover"
+              alt="Telephone"
+            />
+            <div
+              class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-start p-4"
+            >
+              <h2 class="mb-2 fw-bold">Classic Telephones</h2>
+              <p class="mb-3">Timeless design meets functionality.</p>
+              <a href="#" class="btn btn-outline-light">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Selling Products -->
+    <section class="container my-5">
+      <div class="mb-5 text-center">
+        <h2 class="fw-bold">Top Selling Products</h2>
+        <hr class="w-25 mx-auto" />
+        <p class="text-muted">Discover our top picks just for you</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
           <div class="position-relative product-hover">
-            <img src="asset/images/products/iphone.jpg" class="img-fluid rounded shadow-sm" alt="Product">
-            <a href="#" class="btn btn-outline-dark btn-sm see-details-btn">See Details</a>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="position-relative product-hover">
-            <img src="asset/images/products/avocado.jpg" class="img-fluid rounded shadow-sm" alt="Product">
-            <a href="#" class="btn btn-outline-dark btn-sm see-details-btn">See Details</a>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="position-relative product-hover">
-            <img src="asset/images/products/fashion.jpg" class="img-fluid rounded shadow-sm" alt="Product">
-            <a href="#" class="btn btn-outline-dark btn-sm see-details-btn">See Details</a>
+            <img
+              src="asset/images/products/watch.jpg"
+              class="img-fluid rounded shadow-sm"
+              alt="Main Product"
+            />
+            <a href="#" class="btn btn-outline-dark btn-sm see-details-btn"
+              >See Details</a
+            >
           </div>
         </div>
         <div class="col-md-6">
-          <div class="position-relative product-hover">
-            <img src="asset/images/products/telephone.jpg" class="img-fluid rounded shadow-sm" alt="Product">
-            <a href="#" class="btn btn-outline-dark btn-sm see-details-btn">See Details</a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="position-relative product-hover">
-            <img src="asset/images/products/baby-shop.jpg" class="img-fluid rounded shadow-sm" alt="Product">
-            <a href="#" class="btn btn-outline-dark btn-sm see-details-btn">See Details</a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="position-relative product-hover">
-            <img src="asset/images/products/fragnance.jpg" class="img-fluid rounded shadow-sm" alt="Product">
-            <a href="#" class="btn btn-outline-dark btn-sm see-details-btn">See Details</a>
+          <div class="row g-2">
+            <div class="col-4">
+              <div class="position-relative product-hover">
+                <img
+                  src="asset/images/products/iphone.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Product"
+                />
+                <a href="#" class="btn btn-outline-dark btn-sm see-details-btn"
+                  >See Details</a
+                >
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="position-relative product-hover">
+                <img
+                  src="asset/images/products/avocado.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Product"
+                />
+                <a href="#" class="btn btn-outline-dark btn-sm see-details-btn"
+                  >See Details</a
+                >
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="position-relative product-hover">
+                <img
+                  src="asset/images/products/fashion.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Product"
+                />
+                <a href="#" class="btn btn-outline-dark btn-sm see-details-btn"
+                  >See Details</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative product-hover">
+                <img
+                  src="asset/images/products/telephone.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Product"
+                />
+                <a href="#" class="btn btn-outline-dark btn-sm see-details-btn"
+                  >See Details</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="position-relative product-hover">
+                <img
+                  src="asset/images/products/baby-shop.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Product"
+                />
+                <a href="#" class="btn btn-outline-dark btn-sm see-details-btn"
+                  >See Details</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="position-relative product-hover">
+                <img
+                  src="asset/images/products/fragnance.jpg"
+                  class="img-fluid rounded shadow-sm"
+                  alt="Product"
+                />
+                <a href="#" class="btn btn-outline-dark btn-sm see-details-btn"
+                  >See Details</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="container">
-  <div class="mx-auto">
-    <div class="mb-5">
-    <h2 class="fw-bold">Deals Products</h2>
-    <hr class="w-25">
-    <p class="text-muted">Discover our top picks just for you</p>
-  </div>
-     <div class="row">
-      <div class="col-md-4 h-100 promotion">
-        <div class="position-relative">
-          <img src="asset/images/hero-images/hero-1.jpg" class="img-fluid rounded promotion" alt="Side Image 1">
-          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 bg-dark bg-opacity-25 text-white rounded">
-            <h2 class="mb-3 fw-bold">20% Discount of all product</h2>
-         
-            <button class="btn btn-dark">Shop Now</button>
-          </div>
+    <section class="container">
+      <div class="mx-auto">
+        <div class="mb-5">
+          <h2 class="fw-bold">Deals Products</h2>
+          <hr class="w-25" />
+          <p class="text-muted">Discover our top picks just for you</p>
         </div>
-      </div>
-      <div class="col-md-8">
         <div class="row">
-          <div class="col-md-4">
-            <img src="asset/images/products/fashion.jpg" class="img-fluid rounded" alt="">
-            
-      <div class="col-md-3 some-product">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-          </div>
-          <div class="col-md-4">
-            <img src="asset/images/products/avocado.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-          </div>
-          <div class="col-md-4">
-            <img src="asset/images/products/telephone.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-          </div>
-        </div>
-      </div>
-     </div>
-  </div>
-</section>
+          <div class="col-md-4 h-100 promotion">
+            <div class="position-relative">
+              <img
+                src="asset/images/hero-images/hero-1.jpg"
+                class="img-fluid rounded promotion"
+                alt="Side Image 1"
+              />
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3 bg-dark bg-opacity-25 text-white rounded"
+              >
+                <h2 class="mb-3 fw-bold">20% Discount of all product</h2>
 
-
-<section id="top-collection">
-  <div class="container top-collection">
-    <div class="mb-5">
-      <h2 class="fw-bold">Top Collection</h2>
-      <hr class="w-25">
-      <p class="text-muted">Discover our top picks just for you</p>
-    </div>
-    <!-- <div class="row g-4">
-      
-      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <img src="asset/images/products/watch.jpg" class="card-img-top" alt="Product">
-            <span class="badge bg-danger position-absolute top-0 start-0 m-2">New</span>
+                <button class="btn btn-dark">Shop Now</button>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="fw-semibold">Stylish Jacket</h5>
-            <p class="text-muted small">Elegant, comfortable, and perfect for all seasons.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="fw-bold text-primary">$49.99</span>
-              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="asset/images/products/fashion.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+
+                <div class="col-md-3 some-product">
+                  <h5 class="fw-bold mt-2">Avocado</h5>
+                  <p class="fw-bold text-success">
+                    $20 <del class="text-secondary fs-6">$25</del>
+                  </p>
+                </div>
+                <div class="my-3">
+                  <span class=""
+                    >4.9<i class="bi bi-star-fill text-warning mx-2"></i>
+                    (2k)</span
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-outline-dark">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
+                  <div>
+                    <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+                  </div>
+                  <div>
+                    <i
+                      class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="asset/images/products/avocado.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+
+                <div class="col-md-3">
+                  <h5 class="fw-bold mt-2">Avocado</h5>
+                  <p class="fw-bold text-success">
+                    $20 <del class="text-secondary fs-6">$25</del>
+                  </p>
+                </div>
+                <div class="my-3">
+                  <span class=""
+                    >4.9<i class="bi bi-star-fill text-warning mx-2"></i>
+                    (2k)</span
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-outline-dark">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
+                  <div>
+                    <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+                  </div>
+                  <div>
+                    <i
+                      class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="asset/images/products/telephone.jpg"
+                  class="img-fluid rounded"
+                  alt=""
+                />
+
+                <div class="col-md-3">
+                  <h5 class="fw-bold mt-2">Avocado</h5>
+                  <p class="fw-bold text-success">
+                    $20 <del class="text-secondary fs-6">$25</del>
+                  </p>
+                </div>
+                <div class="my-3">
+                  <span class=""
+                    >4.9<i class="bi bi-star-fill text-warning mx-2"></i>
+                    (2k)</span
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button class="btn btn-outline-dark">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
+                  <div>
+                    <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+                  </div>
+                  <div>
+                    <i
+                      class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                    ></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  
-      
-      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <img src="asset/images/products/fashion.jpg"card-img-top" alt="Smart Watch">
-            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
-          </div>
-          <div class="card-body">
-            <h5 class="fw-semibold">Smart Watch</h5>
-            <p class="text-muted small">Stay connected and track your fitness goals.</p>
+    </section>
+
+    <section id="top-collection">
+      <div class="container top-collection">
+        <div class="mb-5">
+          <h2 class="fw-bold">Top Collection</h2>
+          <hr class="w-25" />
+          <p class="text-muted">Discover our top picks just for you</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col products bg-white shadow-sm">
+            <img
+              src="asset/images/products/fashion.jpg"
+              class="img-fluid rounded"
+              alt=""
+            />
+
+            <div class="col-md-3">
+              <h5 class="fw-bold mt-2">Avocado</h5>
+              <p class="fw-bold text-success">
+                $20 <del class="text-secondary fs-6">$25</del>
+              </p>
+            </div>
+            <div class="my-3">
+              <span class=""
+                >4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span
+              >
+            </div>
             <div class="d-flex justify-content-between align-items-center">
-              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
-              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+              <button class="btn btn-outline-dark">
+                <i class="bi bi-cart-plus"></i> Add to Cart
+              </button>
+              <div>
+                <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+              </div>
+              <div>
+                <i
+                  class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col products bg-white shadow-sm">
+            <img
+              src="asset/images/products/fragnance.jpg"
+              class="img-fluid rounded"
+              alt=""
+            />
+
+            <div class="col-md-3">
+              <h5 class="fw-bold mt-2">Avocado</h5>
+              <p class="fw-bold text-success">
+                $20 <del class="text-secondary fs-6">$25</del>
+              </p>
+            </div>
+            <div class="my-3">
+              <span class=""
+                >4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span
+              >
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-dark">
+                <i class="bi bi-cart-plus"></i> Add to Cart
+              </button>
+              <div>
+                <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+              </div>
+              <div>
+                <i
+                  class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col products bg-white shadow-sm">
+            <img
+              src="asset/images/products/spray.jpg"
+              class="img-fluid rounded"
+              alt=""
+            />
+
+            <div class="col-md-3">
+              <h5 class="fw-bold mt-2">Avocado</h5>
+              <p class="fw-bold text-success">
+                $20 <del class="text-secondary fs-6">$25</del>
+              </p>
+            </div>
+            <div class="my-3">
+              <span class=""
+                >4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span
+              >
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-dark">
+                <i class="bi bi-cart-plus"></i> Add to Cart
+              </button>
+              <div>
+                <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+              </div>
+              <div>
+                <i
+                  class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col products bg-white shadow-sm">
+            <img
+              src="asset/images/products/iphone.jpg"
+              class="img-fluid rounded"
+              alt=""
+            />
+
+            <div class="col-md-3">
+              <h5 class="fw-bold mt-2">Avocado</h5>
+              <p class="fw-bold text-success">
+                $20 <del class="text-secondary fs-6">$25</del>
+              </p>
+            </div>
+            <div class="my-3">
+              <span class=""
+                >4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span
+              >
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-dark">
+                <i class="bi bi-cart-plus"></i> Add to Cart
+              </button>
+              <div>
+                <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+              </div>
+              <div>
+                <i
+                  class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col products bg-white shadow-sm">
+              <img
+                src="asset/images/products/smart watch.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+
+              <div class="col-md-3">
+                <h5 class="fw-bold mt-2">Avocado</h5>
+                <p class="fw-bold text-success">
+                  $20 <del class="text-secondary fs-6">$25</del>
+                </p>
+              </div>
+              <div class="my-3">
+                <span class=""
+                  >4.9<i class="bi bi-star-fill text-warning mx-2"></i>
+                  (2k)</span
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-outline-dark">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+                <div>
+                  <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+                </div>
+                <div>
+                  <i
+                    class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="col products bg-white shadow-sm">
+              <img
+                src="asset/images/products/spray.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+
+              <div class="col-md-3">
+                <h5 class="fw-bold mt-2">Avocado</h5>
+                <p class="fw-bold text-success">
+                  $20 <del class="text-secondary fs-6">$25</del>
+                </p>
+              </div>
+              <div class="my-3">
+                <span class=""
+                  >4.9<i class="bi bi-star-fill text-warning mx-2"></i>
+                  (2k)</span
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-outline-dark">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+                <div>
+                  <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+                </div>
+                <div>
+                  <i
+                    class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="col products bg-white shadow-sm">
+              <img
+                src="asset/images/products/avocado.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+
+              <div class="col-md-3">
+                <h5 class="fw-bold mt-2">Avocado</h5>
+                <p class="fw-bold text-success">
+                  $20 <del class="text-secondary fs-6">$25</del>
+                </p>
+              </div>
+              <div class="my-3">
+                <span class=""
+                  >4.9<i class="bi bi-star-fill text-warning mx-2"></i>
+                  (2k)</span
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-outline-dark">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+                <div>
+                  <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+                </div>
+                <div>
+                  <i
+                    class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="col products bg-white shadow-sm">
+              <img
+                src="asset/images/products/spray.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+
+              <div class="col-md-3">
+                <h5 class="fw-bold mt-2">Avocado</h5>
+                <p class="fw-bold text-success">
+                  $20 <del class="text-secondary fs-6">$25</del>
+                </p>
+              </div>
+              <div class="my-3">
+                <span class=""
+                  >4.9<i class="bi bi-star-fill text-warning mx-2"></i>
+                  (2k)</span
+                >
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <button class="btn btn-outline-dark">
+                  <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+                <div>
+                  <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
+                </div>
+                <div>
+                  <i
+                    class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"
+                  ></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <img src="asset/images/products/phone.jpg" class="card-img-top" alt="Smart Watch">
-            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
+    </section>
+
+    <footer class="bg-warning pt-5 pb-4">
+      <div class="container text-md-left">
+        <div class="row text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h5 class="text-uppercase fw-bold mb-4">YourBrand</h5>
+            <p>
+              High-quality products delivered right to your doorstep. Shop
+              smart, live better.
+            </p>
           </div>
-          <div class="card-body">
-            <h5 class="fw-semibold">Smart Watch</h5>
-            <p class="text-muted small">Stay connected and track your fitness goals.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
-              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-semibold mb-4">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="home.html" class="text-dark text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="Terms.html" class="text-dark text-decoration-none"
+                  >Terms and Condition</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy-policy.html"
+                  class="text-dark text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy-policy.html"
+                  class="text-dark text-decoration-none"
+                  >Refund and Return Policy</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-dark text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-semibold mb-4">Categories</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Electronics</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Clothing</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Fitness</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Books</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-semibold mb-4">Contact</h6>
+            <p><i class="bi bi-house-door-fill me-2"></i> Dhaka, Bangladesh</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> info@example.com</p>
+            <p><i class="bi bi-phone-fill me-2"></i> +880 123 456 789</p>
+
+            <div class="mt-3">
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-facebook fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-instagram fs-5"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="bi bi-twitter-x fs-5"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="bi bi-youtube fs-5"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <img src="asset/images/products/spray.jpg" class="card-img-top" alt="Smart Watch">
-            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
-          </div>
-          <div class="card-body">
-            <h5 class="fw-semibold">Smart Watch</h5>
-            <p class="text-muted small">Stay connected and track your fitness goals.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
-              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <img src="asset/images/products/watch.jpg" class="card-img-top" alt="Smart Watch">
-            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
-          </div>
-          <div class="card-body">
-            <h5 class="fw-semibold">Smart Watch</h5>
-            <p class="text-muted small">Stay connected and track your fitness goals.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
-              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <img src="asset/images/products/smart watch.jpg" class="card-img-top" alt="Smart Watch">
-            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
-          </div>
-          <div class="card-body">
-            <h5 class="fw-semibold">Smart Watch</h5>
-            <p class="text-muted small">Stay connected and track your fitness goals.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
-              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <img src="asset/images/products/fragnance.jpg" class="card-img-top" alt="Smart Watch">
-            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
-          </div>
-          <div class="card-body">
-            <h5 class="fw-semibold">Smart Watch</h5>
-            <p class="text-muted small">Stay connected and track your fitness goals.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
-              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100 border-0 shadow-sm">
-          <div class="position-relative">
-            <img src="asset/images/products/jacket.jpg" class="card-img-top" alt="Smart Watch">
-            <span class="badge bg-success position-absolute top-0 start-0 m-2">Sale</span>
-          </div>
-          <div class="card-body">
-            <h5 class="fw-semibold">Smart Watch</h5>
-            <p class="text-muted small">Stay connected and track your fitness goals.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <span class="fw-bold text-primary">$79.99 <del class="text-secondary small">$99.99</del></span>
-              <a href="product-details.html" class="btn btn-sm btn-outline-primary rounded-pill">View Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div class="row g-3">
 
+      <div class="text-center mt-4 pt-3 border-top border-secondary">
+        <p class="mb-0 small">&copy; 2025 YourBrand. All rights reserved.</p>
+      </div>
+    </footer>
 
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/fashion.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/fragnance.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/spray.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/iphone.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="row g-3">
-      <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/smart watch.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/spray.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/avocado.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    <div class="col products bg-white shadow-sm">
-      <img src="asset/images/products/spray.jpg" class="img-fluid rounded" alt="">
-     
-      <div class="col-md-3">
-        <h5 class="fw-bold mt-2">Avocado</h5>
-        <p class="fw-bold text-success">$20 <del class="text-secondary fs-6">$25</del></p>
-      </div>
-      <div class="my-3">
-        <span class="">4.9<i class="bi bi-star-fill text-warning mx-2"></i> (2k)</span>
-      </div>
-      <div class="d-flex justify-content-between align-items-center">
-        <button class="btn btn-outline-dark"><i class="bi bi-cart-plus"></i> Add to Cart</button>
-        <div>
-          <i class="bi bi-heart bg-dark text-white p-2 rounded"></i>
-        </div>
-        <div>
-          <i class="bi bi-arrow-left-right bg-dark text-white p-2 rounded"></i>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-  </div>
- 
-  </div>
-</section>
-
-
-
-<footer class="bg-warning pt-5 pb-4">
-  <div class="container text-md-left">
-    <div class="row text-md-left">
-
-     
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-        <h5 class="text-uppercase fw-bold mb-4">YourBrand</h5>
-        <p>High-quality products delivered right to your doorstep. Shop smart, live better.</p>
-      </div>
-
-  
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-        <h6 class="text-uppercase fw-semibold mb-4">Quick Links</h6>
-        <ul class="list-unstyled">
-          <li><a href="home.html" class="text-dark text-decoration-none">Home</a></li>
-          <li><a href="Terms.html" class="text-dark text-decoration-none">Terms and Condition</a></li>
-          <li><a href="privacy-policy.html" class="text-dark text-decoration-none">Privacy Policy</a></li>
-          <li><a href="privacy-policy.html" class="text-dark text-decoration-none">Refund and Return Policy</a></li>
-          <li><a href="contact.html" class="text-dark text-decoration-none">Contact</a></li>
-        </ul>
-      </div>
-
-     
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-        <h6 class="text-uppercase fw-semibold mb-4">Categories</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-dark text-decoration-none">Electronics</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Clothing</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Fitness</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Books</a></li>
-        </ul>
-      </div>
-
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-        <h6 class="text-uppercase fw-semibold mb-4">Contact</h6>
-        <p><i class="bi bi-house-door-fill me-2"></i> Dhaka, Bangladesh</p>
-        <p><i class="bi bi-envelope-fill me-2"></i> info@example.com</p>
-        <p><i class="bi bi-phone-fill me-2"></i> +880 123 456 789</p>
-
-        <div class="mt-3">
-          <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-5"></i></a>
-          <a href="#" class="text-white"><i class="bi bi-youtube fs-5"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-center mt-4 pt-3 border-top border-secondary">
-    <p class="mb-0 small">&copy; 2025 YourBrand. All rights reserved.</p>
-  </div>
-</footer>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
