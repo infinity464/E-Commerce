@@ -524,7 +524,7 @@ header > p {
   color: #AEB9C6;
 }
 
-h2 {
+.header {
   font-size: 52px;
   color: #f4f4f6;
   margin-top: 40px;
@@ -542,7 +542,7 @@ summary:focus-visible {
   border-radius: 4px;
 }
 
-h4 {
+.faq-head {
   width: 760px;
 }
 
@@ -560,14 +560,14 @@ summary::marker {
   content: "";
 }
 
-span {
+.material-symbols-outlined {
   margin-top: 4px;
-  color: #000000;
+  color: #f4f4f6;
 }
 
 details > p {
   max-width: 650px;
-  color: #111111;
+  color: #AEB9C6;
   font-size: 18px;
   line-height: 155%;
   letter-spacing: .1px;
@@ -576,6 +576,6 @@ details > p {
 }
 
 hr {
-  border: 1px solid #2a2a2b;
+  border: 1px solid #404E5C;
   margin-block-end: 30px;
 }
